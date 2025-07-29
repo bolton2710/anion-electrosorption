@@ -1,3 +1,14 @@
-# anion-electrosorption
+# Repo for Anion Electrosorption paper
 
-welcome to my repo
+The repo files are organized as follows:
+
+dft-study/
+├── README.md
+├── data/
+│   ├── input_files/
+│   ├── output_files/
+│   ├── structures/
+│   └── job_scripts/
+├── analysis/
+│   └── plots/
+└── LICENSE
