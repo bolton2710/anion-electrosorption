@@ -1,0 +1,1890 @@
+ argument  1 = 0e/mol.nwi
+                                         
+                                         
+
+
+             Northwest Computational Chemistry Package (NWChem) 7.2.2
+             --------------------------------------------------------
+
+
+                    Environmental Molecular Sciences Laboratory
+                       Pacific Northwest National Laboratory
+                                Richland, WA 99352
+
+                              Copyright (c) 1994-2022
+                       Pacific Northwest National Laboratory
+                            Battelle Memorial Institute
+
+             NWChem is an open-source computational chemistry package
+                        distributed under the terms of the
+                      Educational Community License (ECL) 2.0
+             A copy of the license is included with this distribution
+                              in the LICENSE.TXT file
+
+                                  ACKNOWLEDGMENT
+                                  --------------
+
+            This software and its documentation were developed at the
+            EMSL at Pacific Northwest National Laboratory, a multiprogram
+            national laboratory, operated for the U.S. Department of Energy
+            by Battelle under Contract Number DE-AC05-76RL01830. Support
+            for this work was provided by the Department of Energy Office
+            of Biological and Environmental Research, Office of Basic
+            Energy Sciences, and the Office of Advanced Scientific Computing.
+
+
+           Job information
+           ---------------
+
+    hostname        = r381.ib.bridges2.psc.edu
+    program         = nwchem
+    date            = Tue Oct  1 15:44:22 2024
+
+    compiled        = Mon_Mar_18_17:03:37_2024
+    source          = /ocean/projects/pscstaff/mmadrid/nwchem-7.2.2
+    nwchem branch   = 7.2.2
+    nwchem revision = 74936fb9
+    ga revision     = 5.8.0
+    use scalapack   = F
+    input           = 0e/mol.nwi
+    prefix          = dft.
+    data base       = .//dft.db
+    status          = startup
+    nproc           =       15
+    time left       =     -1s
+
+
+
+           Memory information
+           ------------------
+
+    heap     =   67108860 doubles =    512.0 Mbytes
+    stack    =   67108865 doubles =    512.0 Mbytes
+    global   =  134217728 doubles =   1024.0 Mbytes (distinct from heap & stack)
+    total    =  268435453 doubles =   2048.0 Mbytes
+    verify   = yes
+    hardfail = no 
+
+
+           Directory information
+           ---------------------
+
+  0 permanent = ./
+  0 scratch   = /jet/home/hmt47/nwchem_scratch/
+
+
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+  library name resolved from: environment
+  library file name is: </opt/packages/nwchem/nwchem7.2.2/share/nwchem/libraries/>
+  
+
+
+ Summary of "ao basis" -> "" (cartesian)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ *                        aug-cc-pVTZ                 on all atoms 
+
+
+  pbe96 is a nonlocal functional; adding pw91lda local functional. 
+
+ Scaling coordinates for geometry "geometry" by  1.889725989
+ (inverse scale =  0.529177249)
+
+
+
+                             Geometry "geometry" -> ""
+                             -------------------------
+
+ Output coordinates in angstroms (scale by  1.889725989 to convert to a.u.)
+
+  No.       Tag          Charge          X              Y              Z
+ ---- ---------------- ---------- -------------- -------------- --------------
+    1 Br                  35.0000     0.00000000     0.00000000     0.00000000
+
+      Atomic Mass 
+      ----------- 
+
+      Br                79.916500
+
+
+ Effective nuclear repulsion energy (a.u.)       0.0000000000
+
+            Nuclear Dipole moment (a.u.) 
+            ----------------------------
+        X                 Y               Z
+ ---------------- ---------------- ----------------
+     0.0000000000     0.0000000000     0.0000000000
+
+
+            XYZ format geometry
+            -------------------
+     1
+ geometry
+ Br                    0.00000000     0.00000000     0.00000000
+
+
+                                 NWChem DFT Module
+                                 -----------------
+
+
+                      Basis "ao basis" -> "ao basis" (cartesian)
+                      -----
+  Br (Bromine)
+  ------------
+            Exponent  Coefficients 
+       -------------- ---------------------------------------------------------
+  1 S  1.06390000E+07  0.000006
+  1 S  1.59340000E+06  0.000046
+  1 S  3.62610000E+05  0.000242
+  1 S  1.02700000E+05  0.001023
+  1 S  3.35010000E+04  0.003711
+  1 S  1.20930000E+04  0.011979
+  1 S  4.71590000E+03  0.034693
+  1 S  1.95560000E+03  0.089124
+  1 S  8.52610000E+02  0.193456
+  1 S  3.87670000E+02  0.320902
+  1 S  1.82680000E+02  0.329923
+  1 S  8.82450000E+01  0.149412
+  1 S  3.92630000E+01  0.014994
+  1 S  1.92340000E+01 -0.000917
+  1 S  9.40570000E+00  0.000438
+  1 S  4.16010000E+00 -0.000240
+  1 S  1.89950000E+00  0.000074
+  1 S  3.01140000E-01  0.000024
+
+  2 S  1.06390000E+07 -0.000002
+  2 S  1.59340000E+06 -0.000015
+  2 S  3.62610000E+05 -0.000076
+  2 S  1.02700000E+05 -0.000321
+  2 S  3.35010000E+04 -0.001171
+  2 S  1.20930000E+04 -0.003797
+  2 S  4.71590000E+03 -0.011231
+  2 S  1.95560000E+03 -0.029928
+  2 S  8.52610000E+02 -0.071271
+  2 S  3.87670000E+02 -0.140314
+  2 S  1.82680000E+02 -0.203076
+  2 S  8.82450000E+01 -0.096099
+  2 S  3.92630000E+01  0.355809
+  2 S  1.92340000E+01  0.592179
+  2 S  9.40570000E+00  0.221598
+  2 S  4.16010000E+00  0.013765
+  2 S  1.89950000E+00  0.000840
+  2 S  3.01140000E-01 -0.000009
+
+  3 S  1.06390000E+07  0.000001
+  3 S  1.59340000E+06  0.000006
+  3 S  3.62610000E+05  0.000030
+  3 S  1.02700000E+05  0.000128
+  3 S  3.35010000E+04  0.000466
+  3 S  1.20930000E+04  0.001510
+  3 S  4.71590000E+03  0.004485
+  3 S  1.95560000E+03  0.011984
+  3 S  8.52610000E+02  0.028957
+  3 S  3.87670000E+02  0.058157
+  3 S  1.82680000E+02  0.088813
+  3 S  8.82450000E+01  0.044524
+  3 S  3.92630000E+01 -0.206039
+  3 S  1.92340000E+01 -0.512702
+  3 S  9.40570000E+00 -0.150935
+  3 S  4.16010000E+00  0.678920
+  3 S  1.89950000E+00  0.581770
+  3 S  3.01140000E-01 -0.011183
+
+  4 S  1.06390000E+07 -0.000000
+  4 S  1.59340000E+06 -0.000002
+  4 S  3.62610000E+05 -0.000009
+  4 S  1.02700000E+05 -0.000039
+  4 S  3.35010000E+04 -0.000143
+  4 S  1.20930000E+04 -0.000463
+  4 S  4.71590000E+03 -0.001375
+  4 S  1.95560000E+03 -0.003678
+  4 S  8.52610000E+02 -0.008898
+  4 S  3.87670000E+02 -0.017953
+  4 S  1.82680000E+02 -0.027573
+  4 S  8.82450000E+01 -0.014095
+  4 S  3.92630000E+01  0.067256
+  4 S  1.92340000E+01  0.176693
+  4 S  9.40570000E+00  0.052886
+  4 S  4.16010000E+00 -0.307596
+  4 S  1.89950000E+00 -0.470066
+  4 S  3.01140000E-01  0.698034
+
+  5 S  6.04720000E-01  1.000000
+
+  6 S  1.25150000E-01  1.000000
+
+  7 S  4.55930000E-02  1.000000
+
+  8 P  8.67650000E+03  0.000436
+  8 P  2.05590000E+03  0.003782
+  8 P  6.66230000E+02  0.020478
+  8 P  2.53100000E+02  0.079283
+  8 P  1.06120000E+02  0.217847
+  8 P  4.72420000E+01  0.387859
+  8 P  2.18250000E+01  0.359435
+  8 P  9.96840000E+00  0.112200
+  8 P  4.51710000E+00  0.004387
+  8 P  1.99820000E+00  0.001781
+  8 P  2.81450000E-01  0.000212
+
+  9 P  8.67650000E+03 -0.000175
+  9 P  2.05590000E+03 -0.001526
+  9 P  6.66230000E+02 -0.008340
+  9 P  2.53100000E+02 -0.033220
+  9 P  1.06120000E+02 -0.095418
+  9 P  4.72420000E+01 -0.182403
+  9 P  2.18250000E+01 -0.155831
+  9 P  9.96840000E+00  0.186790
+  9 P  4.51710000E+00  0.542773
+  9 P  1.99820000E+00  0.387331
+  9 P  2.81450000E-01 -0.004378
+
+ 10 P  8.67650000E+03  0.000045
+ 10 P  2.05590000E+03  0.000396
+ 10 P  6.66230000E+02  0.002156
+ 10 P  2.53100000E+02  0.008672
+ 10 P  1.06120000E+02  0.024868
+ 10 P  4.72420000E+01  0.048547
+ 10 P  2.18250000E+01  0.039616
+ 10 P  9.96840000E+00 -0.060575
+ 10 P  4.51710000E+00 -0.187170
+ 10 P  1.99820000E+00 -0.137776
+ 10 P  2.81450000E-01  0.576090
+
+ 11 P  7.09880000E-01  1.000000
+
+ 12 P  1.02040000E-01  1.000000
+
+ 13 P  3.51420000E-02  1.000000
+
+ 14 D  4.03830000E+02  0.001473
+ 14 D  1.21170000E+02  0.012673
+ 14 D  4.63450000E+01  0.058045
+ 14 D  1.97210000E+01  0.170510
+ 14 D  8.86240000E+00  0.318596
+ 14 D  3.99620000E+00  0.384502
+ 14 D  1.76360000E+00  0.273774
+
+ 15 D  7.06190000E-01  1.000000
+
+ 16 D  2.63900000E-01  1.000000
+
+ 17 D  1.04700000E-01  1.000000
+
+ 18 F  5.51500000E-01  1.000000
+
+ 19 F  2.58000000E-01  1.000000
+
+
+
+ Summary of "ao basis" -> "ao basis" (cartesian)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ Br                       aug-cc-pVTZ               19       69   7s6p4d2f
+
+
+
+
+ Summary of "ao basis" -> "ao basis" (cartesian)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ Br                       aug-cc-pVTZ               19       69   7s6p4d2f
+
+
+  Caching 1-el integrals 
+
+            General Information
+            -------------------
+          SCF calculation type: DFT
+          Wavefunction type:  spin polarized.
+          No. of atoms     :     1
+          No. of electrons :    35
+           Alpha electrons :    18
+            Beta electrons :    17
+          Charge           :     0
+          Spin multiplicity:     2
+          Use of symmetry is: off; symmetry adaption is: off
+          Maximum number of iterations: 200
+          AO basis - number of functions:    69
+                     number of shells:    19
+          Convergence on energy requested:  1.00D-06
+          Convergence on density requested:  1.00D-05
+          Convergence on gradient requested:  5.00D-04
+
+              XC Information
+              --------------
+          PerdewBurkeErnzerhof Exchange Functional  1.000          
+            Perdew 1991 LDA Correlation Functional  1.000 local    
+           PerdewBurkeErnz. Correlation Functional  1.000 non-local
+
+             Grid Information
+             ----------------
+          Grid used for XC integration:  medium    
+          Radial quadrature: Mura-Knowles        
+          Angular quadrature: Lebedev. 
+          Tag              B.-S. Rad. Rad. Pts. Rad. Cut. Ang. Pts.
+          ---              ---------- --------- --------- ---------
+          Br                  1.15      112           9.0       590
+          Grid pruning is: on 
+          Number of quadrature shells:   112
+          Spatial weights used:  Erf1
+
+          Convergence Information
+          -----------------------
+          Convergence aids based upon iterative change in 
+          total energy or number of iterations. 
+          Levelshifting, if invoked, occurs when the 
+          HOMO/LUMO gap drops below (HL_TOL):  1.00D-02
+          DIIS, if invoked, will attempt to extrapolate 
+          using up to (NFOCK): 10 stored Fock matrices.
+
+                    Damping(40%)  Levelshifting(0.0)       DIIS
+                  --------------- ------------------- ---------------
+          dE  on:    start            0.00D+00            start   
+          dE off:  200 iters          0.00D+00          200 iters 
+
+
+      Screening Tolerance Information
+      -------------------------------
+          Density screening/tol_rho:  1.00D-10
+          AO Gaussian exp screening on grid/accAOfunc:  14
+          CD Gaussian exp screening on grid/accCDfunc:  20
+          XC Gaussian exp screening on grid/accXCfunc:  20
+          Schwarz screening/accCoul:  1.00D-08
+
+
+ Forcing the number of linearly dependent vectors to be  0
+
+      Superposition of Atomic Density Guess
+      -------------------------------------
+
+ Sum of atomic energies:       -2572.44605052
+   Time after variat. SCF:      2.2
+   Time prior to 1st pass:      2.2
+
+ Grid_pts file          = /jet/home/hmt47/nwchem_scratch//dft.gridpts.00
+ Record size in doubles =  12289        No. of grid_pts per rec  =   3070
+ Max. records in memory =      3        Max. recs in file   =  67550051
+
+
+           Memory utilization after 1st SCF pass: 
+           Heap Space remaining (MW):       33.51            33513628
+          Stack Space remaining (MW):       67.11            67108204
+
+   convergence    iter        energy       DeltaE   RMS-Dens  Diis-err    time
+ ---------------- ----- ----------------- --------- --------- ---------  ------
+ d=40,ls=0.0,diis     1  -2573.7625837958 -2.57D+03  7.50D-03  4.48D-01     2.8
+                                                     9.05D-03  5.04D-01
+ d=40,ls=0.0,diis     2  -2573.7605541492  2.03D-03  3.45D-03  7.42D-02     3.4
+                                                     7.60D-03  5.68D-02
+ d=40,ls=0.0,diis     3  -2573.7615331223 -9.79D-04  1.51D-03  2.07D-02     3.9
+                                                     5.89D-03  1.07D-02
+ d=40,ls=0.0,diis     4  -2573.7657976250 -4.26D-03  6.03D-04  3.25D-03     4.5
+                                                     2.34D-03  1.84D-03
+ d=40,ls=0.0,diis     5  -2573.7672675167 -1.47D-03  4.06D-04  2.15D-03     5.0
+                                                     9.52D-04  3.11D-04
+  Resetting Diis
+ d=40,ls=0.0,diis     6  -2573.7682655932 -9.98D-04  4.60D-04  1.55D-03     5.6
+                                                     4.13D-04  8.67D-05
+ d=40,ls=0.0,diis     7  -2573.7689408840 -6.75D-04  3.28D-04  5.54D-04     6.2
+                                                     1.75D-04  2.33D-05
+ d=40,ls=0.0,diis     8  -2573.7692760487 -3.35D-04  1.57D-04  1.05D-04     6.7
+                                                     8.98D-05  5.45D-06
+ d=40,ls=0.0,diis     9  -2573.7694199568 -1.44D-04  7.26D-05  2.00D-05     7.3
+                                                     4.24D-05  1.29D-06
+ d=40,ls=0.0,diis    10  -2573.7694798702 -5.99D-05  2.97D-05  3.34D-06     7.8
+                                                     1.65D-05  2.54D-07
+ d=40,ls=0.0,diis    11  -2573.7695043183 -2.44D-05  1.15D-05  5.08D-07     8.4
+                                                     6.48D-06  4.16D-08
+ d=40,ls=0.0,diis    12  -2573.7695141718 -9.85D-06  4.58D-06  8.10D-08     9.0
+                                                     2.60D-06  6.52D-09
+ d=40,ls=0.0,diis    13  -2573.7695181243 -3.95D-06  1.84D-06  1.31D-08     9.6
+                                                     1.04D-06  1.05D-09
+ d=40,ls=0.0,diis    14  -2573.7695197072 -1.58D-06  7.39D-07  2.10D-09    10.1
+                                                     4.17D-07  1.68D-10
+ d=40,ls=0.0,diis    15  -2573.7695203406 -6.33D-07  2.95D-07  3.36D-10    10.7
+                                                     1.67D-07  2.69D-11
+
+
+         Total DFT energy =    -2573.769520340599
+      One electron energy =    -3580.581399664442
+           Coulomb energy =     1097.651763527251
+    Exchange-Corr. energy =      -90.839884203407
+ Nuclear repulsion energy =        0.000000000000
+
+ Numeric. integr. density =       35.000000000137
+
+     Total iterative time =      8.5s
+
+
+
+                    DFT Final Alpha Molecular Orbital Analysis
+                    ------------------------------------------
+
+ Vector    1  Occ=1.000000D+00  E=-4.810840D+02
+              MO Center= -9.8D-20, -5.0D-20,  9.8D-20, r^2= 7.2D-04
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     1      1.000676  1 Br s          
+
+ Vector    2  Occ=1.000000D+00  E=-6.186822D+01
+              MO Center= -1.1D-16,  2.9D-16,  2.1D-16, r^2= 1.2D-02
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     2      0.968781  1 Br s                  3     -0.061526  1 Br s          
+     6     -0.037065  1 Br s                  4     -0.032631  1 Br s          
+    26      0.030819  1 Br dxx               29      0.030800  1 Br dyy        
+    31      0.030904  1 Br dzz        
+
+ Vector    3  Occ=1.000000D+00  E=-5.578667D+01
+              MO Center=  4.8D-17,  9.1D-18, -2.1D-16, r^2= 9.5D-03
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    10      0.918741  1 Br pz                 8     -0.395170  1 Br px         
+
+ Vector    4  Occ=1.000000D+00  E=-5.577907D+01
+              MO Center=  1.0D-16, -2.5D-16,  3.7D-17, r^2= 9.5D-03
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     9      0.898049  1 Br py                 8     -0.401970  1 Br px         
+    10     -0.179485  1 Br pz         
+
+ Vector    5  Occ=1.000000D+00  E=-5.577907D+01
+              MO Center= -4.4D-17, -8.9D-17, -3.7D-17, r^2= 9.5D-03
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     8      0.826164  1 Br px                 9      0.440169  1 Br py         
+    10      0.352121  1 Br pz         
+
+ Vector    6  Occ=1.000000D+00  E=-8.453801D+00
+              MO Center=  1.3D-16,  2.3D-16, -4.5D-16, r^2= 1.0D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3      0.937977  1 Br s                  5      0.061893  1 Br s          
+
+ Vector    7  Occ=1.000000D+00  E=-6.336781D+00
+              MO Center= -1.8D-16,  4.5D-19,  7.3D-16, r^2= 1.1D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    13      0.922840  1 Br pz                11     -0.396933  1 Br px         
+    16      0.057445  1 Br pz                19      0.036259  1 Br pz         
+
+ Vector    8  Occ=1.000000D+00  E=-6.315488D+00
+              MO Center=  1.7D-16, -8.7D-17,  1.7D-16, r^2= 1.1D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    12      0.905412  1 Br py                11     -0.395225  1 Br px         
+    13     -0.176638  1 Br pz                15      0.053207  1 Br py         
+    18      0.034771  1 Br py         
+
+ Vector    9  Occ=1.000000D+00  E=-6.315488D+00
+              MO Center=  1.6D-16, -2.5D-16, -4.2D-16, r^2= 1.1D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    11      0.832909  1 Br px                12      0.432848  1 Br py         
+    13      0.355076  1 Br pz                14      0.048946  1 Br px         
+    17      0.031986  1 Br px                15      0.025436  1 Br py         
+
+ Vector   10  Occ=1.000000D+00  E=-2.537522D+00
+              MO Center=  1.1D-16, -3.3D-17, -1.8D-16, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    28      1.051236  1 Br dxz               31     -0.739327  1 Br dzz        
+    29      0.482630  1 Br dyy               26      0.256617  1 Br dxx        
+    34      0.094225  1 Br dxz               37     -0.066076  1 Br dzz        
+    35      0.043451  1 Br dyy        
+
+ Vector   11  Occ=1.000000D+00  E=-2.532187D+00
+              MO Center=  2.1D-17,  3.2D-17, -9.8D-17, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    30      1.382820  1 Br dyz               27     -0.600099  1 Br dxy        
+    28     -0.491223  1 Br dxz               31     -0.271714  1 Br dzz        
+    26      0.261554  1 Br dxx               36      0.122721  1 Br dyz        
+    33     -0.053257  1 Br dxy               34     -0.043594  1 Br dxz        
+
+ Vector   12  Occ=1.000000D+00  E=-2.532187D+00
+              MO Center= -3.1D-16, -1.3D-16,  5.0D-17, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    28      1.040351  1 Br dxz               30      0.669942  1 Br dyz        
+    26     -0.547945  1 Br dxx               31      0.543059  1 Br dzz        
+    27     -0.277095  1 Br dxy               34      0.092328  1 Br dxz        
+    36      0.059455  1 Br dyz               32     -0.048628  1 Br dxx        
+    37      0.048195  1 Br dzz        
+
+ Vector   13  Occ=1.000000D+00  E=-2.516202D+00
+              MO Center= -2.1D-16, -1.5D-16, -8.2D-17, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    27      0.884695  1 Br dxy               29      0.686228  1 Br dyy        
+    26     -0.576769  1 Br dxx               28     -0.502652  1 Br dxz        
+    30      0.370456  1 Br dyz               31     -0.109460  1 Br dzz        
+    33      0.076334  1 Br dxy               35      0.059210  1 Br dyy        
+    32     -0.049765  1 Br dxx               34     -0.043370  1 Br dxz        
+
+ Vector   14  Occ=1.000000D+00  E=-2.516202D+00
+              MO Center=  1.2D-16,  8.9D-17,  6.4D-17, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    27      1.258252  1 Br dxy               30      0.548238  1 Br dyz        
+    29     -0.479530  1 Br dyy               26      0.408038  1 Br dxx        
+    28      0.341779  1 Br dxz               33      0.108565  1 Br dxy        
+    31      0.071492  1 Br dzz               36      0.047303  1 Br dyz        
+    35     -0.041375  1 Br dyy               32      0.035207  1 Br dxx        
+
+ Vector   15  Occ=1.000000D+00  E=-7.285744D-01
+              MO Center= -2.0D-16,  1.6D-16,  7.4D-16, r^2= 9.3D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     4      0.639732  1 Br s                  6      0.407218  1 Br s          
+     5      0.270247  1 Br s                 41     -0.046515  1 Br dyy        
+    38     -0.042070  1 Br dxx                7      0.039250  1 Br s          
+     3     -0.034772  1 Br s                 44     -0.029747  1 Br dxx        
+    47     -0.029765  1 Br dyy               49     -0.029666  1 Br dzz        
+
+ Vector   16  Occ=1.000000D+00  E=-3.352851D-01
+              MO Center=  2.1D-15,  4.8D-17, -1.9D-15, r^2= 1.4D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    16      0.380126  1 Br pz                19      0.338004  1 Br pz         
+    22      0.209247  1 Br pz                14     -0.163500  1 Br px         
+    17     -0.145383  1 Br px                13     -0.105041  1 Br pz         
+    20     -0.090001  1 Br px                69      0.066704  1 Br fzzz       
+    59      0.063574  1 Br fzzz              62      0.058850  1 Br fxxz       
+
+ Vector   17  Occ=1.000000D+00  E=-2.876602D-01
+              MO Center=  1.3D-15, -1.1D-15, -3.7D-16, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    15      0.380974  1 Br py                18      0.319094  1 Br py         
+    21      0.229805  1 Br py                14     -0.173204  1 Br px         
+    17     -0.145071  1 Br px                20     -0.104478  1 Br px         
+    12     -0.091689  1 Br py                16     -0.077294  1 Br pz         
+    68      0.068957  1 Br fyzz              19     -0.064739  1 Br pz         
+
+ Vector   18  Occ=1.000000D+00  E=-2.876602D-01
+              MO Center= -1.0D-15,  4.9D-17,  5.5D-16, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    14      0.350487  1 Br px                17      0.293559  1 Br px         
+    20      0.211415  1 Br px                15      0.189646  1 Br py         
+    18      0.158843  1 Br py                16      0.149360  1 Br pz         
+    19      0.125100  1 Br pz                21      0.114396  1 Br py         
+    22      0.090095  1 Br pz                11     -0.084351  1 Br px         
+
+ Vector   19  Occ=0.000000D+00  E=-6.111128D-03
+              MO Center= -1.4D-13,  2.4D-14,  4.8D-14, r^2= 8.8D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     7      2.734412  1 Br s                  6      0.714220  1 Br s          
+     5     -0.645632  1 Br s                 47     -0.634128  1 Br dyy        
+    44     -0.623913  1 Br dxx               49     -0.578903  1 Br dzz        
+    38     -0.451261  1 Br dxx               43     -0.453180  1 Br dzz        
+    41     -0.450826  1 Br dyy                4     -0.349332  1 Br s          
+
+ Vector   20  Occ=0.000000D+00  E= 3.484279D-02
+              MO Center=  4.3D-14, -5.9D-16, -1.1D-13, r^2= 1.2D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    25      1.190530  1 Br pz                16     -0.679016  1 Br pz         
+    22     -0.620119  1 Br pz                23     -0.512071  1 Br px         
+    14      0.292058  1 Br px                13     -0.283204  1 Br pz         
+    69      0.275806  1 Br fzzz              62      0.272854  1 Br fxxz       
+    67      0.269173  1 Br fyyz              20      0.266725  1 Br px         
+
+ Vector   21  Occ=0.000000D+00  E= 4.088346D-02
+              MO Center=  9.3D-14,  1.8D-14,  4.1D-14, r^2= 1.3D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    23      1.203217  1 Br px                14     -0.741662  1 Br px         
+    20     -0.707458  1 Br px                25      0.515688  1 Br pz         
+    11     -0.319077  1 Br px                16     -0.317870  1 Br pz         
+    65      0.314002  1 Br fxzz              60      0.311585  1 Br fxxx       
+    63      0.310577  1 Br fxyy              22     -0.303210  1 Br pz         
+
+ Vector   22  Occ=0.000000D+00  E= 4.088348D-02
+              MO Center=  3.2D-15, -2.0D-14,  2.8D-16, r^2= 1.3D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    24      1.309039  1 Br py                15     -0.806891  1 Br py         
+    21     -0.769679  1 Br py                12     -0.347140  1 Br py         
+    68      0.343782  1 Br fyzz              61      0.338995  1 Br fxxy       
+    66      0.337900  1 Br fyyy              23     -0.226899  1 Br px         
+    56      0.203698  1 Br fyyy              51      0.201339  1 Br fxxy       
+
+ Vector   23  Occ=0.000000D+00  E= 1.219876D-01
+              MO Center=  6.3D-15, -4.2D-16, -5.1D-15, r^2= 4.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    46      0.971280  1 Br dxz               49     -0.858310  1 Br dzz        
+     7      0.435141  1 Br s                  6      0.284911  1 Br s          
+    47      0.270707  1 Br dyy               43     -0.182295  1 Br dzz        
+    34      0.147829  1 Br dxz               28     -0.127008  1 Br dxz        
+    37     -0.123136  1 Br dzz                5     -0.105761  1 Br s          
+
+ Vector   24  Occ=0.000000D+00  E= 1.265964D-01
+              MO Center=  6.1D-16,  8.6D-17, -8.8D-16, r^2= 4.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    48      1.280813  1 Br dyz               45     -0.556094  1 Br dxy        
+    46     -0.479596  1 Br dxz               49     -0.264659  1 Br dzz        
+    44      0.255247  1 Br dxx               36      0.192298  1 Br dyz        
+    30     -0.163462  1 Br dyz               42      0.102806  1 Br dyz        
+    33     -0.083491  1 Br dxy               34     -0.072005  1 Br dxz        
+
+ Vector   25  Occ=0.000000D+00  E= 1.265964D-01
+              MO Center=  8.0D-16,  1.1D-15,  1.4D-15, r^2= 4.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    46      0.963854  1 Br dxz               48      0.653391  1 Br dyz        
+    44     -0.507600  1 Br dxx               49      0.502833  1 Br dzz        
+    45     -0.270791  1 Br dxy               34      0.144711  1 Br dxz        
+    28     -0.123010  1 Br dxz               36      0.098098  1 Br dyz        
+    30     -0.083388  1 Br dyz               40      0.077365  1 Br dxz        
+
+ Vector   26  Occ=0.000000D+00  E= 1.426267D-01
+              MO Center=  8.7D-16,  4.8D-15,  5.7D-16, r^2= 4.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    45      0.850515  1 Br dxy               47      0.665041  1 Br dyy        
+    44     -0.558979  1 Br dxx               46     -0.487098  1 Br dxz        
+    48      0.356065  1 Br dyz               33      0.120251  1 Br dxy        
+    49     -0.106062  1 Br dzz               27     -0.098725  1 Br dxy        
+    35      0.094027  1 Br dyy               32     -0.079032  1 Br dxx        
+
+ Vector   27  Occ=0.000000D+00  E= 1.426267D-01
+              MO Center= -1.7D-15,  6.3D-17, -9.9D-16, r^2= 4.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    45      1.219424  1 Br dxy               48      0.531265  1 Br dyz        
+    47     -0.460988  1 Br dyy               44      0.392287  1 Br dxx        
+    46      0.328514  1 Br dxz               33      0.172410  1 Br dxy        
+    27     -0.141547  1 Br dxy               36      0.075113  1 Br dyz        
+    49      0.068701  1 Br dzz               35     -0.065177  1 Br dyy        
+
+ Vector   28  Occ=0.000000D+00  E= 2.090360D-01
+              MO Center=  9.4D-14,  1.9D-13, -2.2D-13, r^2= 9.9D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     6      5.688997  1 Br s                  7      5.412864  1 Br s          
+    44     -2.712154  1 Br dxx               47     -2.725021  1 Br dyy        
+    49     -2.655451  1 Br dzz                5     -1.988158  1 Br s          
+    38     -1.957424  1 Br dxx               41     -1.958498  1 Br dyy        
+    43     -1.952693  1 Br dzz                3     -0.465996  1 Br s          
+
+ Vector   29  Occ=0.000000D+00  E= 2.636128D-01
+              MO Center= -8.5D-14,  7.9D-16,  2.0D-13, r^2= 9.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    22      3.618106  1 Br pz                16      2.868283  1 Br pz         
+    67     -1.963024  1 Br fyyz              62     -1.948882  1 Br fxxz       
+    69     -1.937541  1 Br fzzz              13      1.765359  1 Br pz         
+    20     -1.556222  1 Br px                19     -1.379012  1 Br pz         
+    25     -1.242851  1 Br pz                14     -1.233707  1 Br px         
+
+ Vector   30  Occ=0.000000D+00  E= 2.775963D-01
+              MO Center= -1.8D-14, -3.7D-15, -1.3D-14, r^2= 9.1D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    20      3.599339  1 Br px                14      2.911045  1 Br px         
+    60     -1.975782  1 Br fxxx              63     -1.980580  1 Br fxyy       
+    65     -1.964286  1 Br fxzz              11      1.789539  1 Br px         
+    22      1.542793  1 Br pz                17     -1.390629  1 Br px         
+    16      1.247768  1 Br pz                23     -1.198954  1 Br px         
+
+ Vector   31  Occ=0.000000D+00  E= 2.775964D-01
+              MO Center=  2.7D-14, -1.8D-13,  1.8D-14, r^2= 9.1D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    21      3.915958  1 Br py                15      3.167118  1 Br py         
+    61     -2.149554  1 Br fxxy              66     -2.154767  1 Br fyyy       
+    68     -2.126774  1 Br fyzz              12      1.946957  1 Br py         
+    18     -1.512957  1 Br py                24     -1.304422  1 Br py         
+    58     -1.242620  1 Br fyzz              51     -1.220838  1 Br fxxy       
+
+ Vector   32  Occ=0.000000D+00  E= 5.127940D-01
+              MO Center= -1.2D-15, -8.7D-16, -1.8D-15, r^2= 3.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    40      1.398152  1 Br dxz               46     -1.168370  1 Br dxz        
+    43     -0.927229  1 Br dzz               49      0.885544  1 Br dzz        
+    41      0.697984  1 Br dyy               47     -0.472571  1 Br dyy        
+    38      0.397385  1 Br dxx                6     -0.272166  1 Br s          
+    28     -0.224163  1 Br dxz               44     -0.221374  1 Br dxx        
+
+ Vector   33  Occ=0.000000D+00  E= 5.204386D-01
+              MO Center=  2.5D-16, -5.7D-16, -1.2D-17, r^2= 3.4D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    42      1.829503  1 Br dyz               48     -1.515279  1 Br dyz        
+    39     -0.794228  1 Br dxy               40     -0.676444  1 Br dxz        
+    45      0.657817  1 Br dxy               46      0.560262  1 Br dxz        
+    43     -0.373494  1 Br dzz               38      0.360051  1 Br dxx        
+    49      0.309345  1 Br dzz               44     -0.298211  1 Br dxx        
+
+ Vector   34  Occ=0.000000D+00  E= 5.204386D-01
+              MO Center= -4.8D-16, -4.2D-16, -2.0D-15, r^2= 3.4D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    40      1.376675  1 Br dxz               46     -1.140226  1 Br dxz        
+    42      0.921801  1 Br dyz               48     -0.763479  1 Br dyz        
+    38     -0.725025  1 Br dxx               43      0.718300  1 Br dzz        
+    44      0.600499  1 Br dxx               49     -0.594930  1 Br dzz        
+    39     -0.381851  1 Br dxy               45      0.316267  1 Br dxy        
+
+ Vector   35  Occ=0.000000D+00  E= 5.464726D-01
+              MO Center= -1.6D-15,  3.8D-15, -1.6D-16, r^2= 3.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    39      1.197695  1 Br dxy               45     -0.962421  1 Br dxy        
+    41      0.917825  1 Br dyy               38     -0.771385  1 Br dxx        
+    47     -0.737529  1 Br dyy               40     -0.672366  1 Br dxz        
+    44      0.619855  1 Br dxx               46      0.540287  1 Br dxz        
+    42      0.501685  1 Br dyz               48     -0.403135  1 Br dyz        
+
+ Vector   36  Occ=0.000000D+00  E= 5.464726D-01
+              MO Center=  4.1D-15,  5.3D-16,  1.9D-15, r^2= 3.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    39      1.682862  1 Br dxy               45     -1.352282  1 Br dxy        
+    42      0.733361  1 Br dyz               41     -0.649217  1 Br dyy        
+    48     -0.589300  1 Br dyz               38      0.552372  1 Br dxx        
+    47      0.521686  1 Br dyy               40      0.462826  1 Br dxz        
+    44     -0.443865  1 Br dxx               46     -0.371909  1 Br dxz        
+
+ Vector   37  Occ=0.000000D+00  E= 6.970402D-01
+              MO Center= -1.1D-16, -1.1D-15, -1.2D-15, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    65      2.131117  1 Br fxzz              67      1.312059  1 Br fyyz       
+    69     -0.776633  1 Br fzzz              63     -0.564344  1 Br fxyy       
+    60     -0.398256  1 Br fxxx              16      0.309105  1 Br pz         
+    57     -0.243613  1 Br fyyz              55     -0.176698  1 Br fxzz       
+    22      0.175188  1 Br pz                13      0.152460  1 Br pz         
+
+ Vector   38  Occ=0.000000D+00  E= 7.000112D-01
+              MO Center= -1.4D-16,  4.3D-16,  2.7D-16, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    64      2.154562  1 Br fxyz              68     -2.025163  1 Br fyzz       
+    62     -0.988132  1 Br fxxz              65      0.497917  1 Br fxzz       
+    66      0.455929  1 Br fyyy              69      0.418810  1 Br fzzz       
+    15      0.240165  1 Br py                54     -0.228031  1 Br fxyz       
+    63     -0.194914  1 Br fxyy              21      0.135605  1 Br py         
+
+ Vector   39  Occ=0.000000D+00  E= 7.000112D-01
+              MO Center= -5.8D-16, -5.1D-17, -9.0D-16, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    62      1.967934  1 Br fxxz              64      1.055380  1 Br fxyz       
+    68     -1.042393  1 Br fyzz              65     -1.030824  1 Br fxzz       
+    69     -0.796811  1 Br fzzz              63      0.427398  1 Br fxyy       
+    52     -0.240622  1 Br fxxz              66      0.230596  1 Br fyyy       
+    14      0.220951  1 Br px                67      0.160252  1 Br fyyz       
+
+ Vector   40  Occ=0.000000D+00  E= 7.099234D-01
+              MO Center=  1.6D-16, -1.3D-15, -1.7D-15, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    64      1.700516  1 Br fxyz              67      1.567609  1 Br fyyz       
+    65     -1.036724  1 Br fxzz              61     -0.906317  1 Br fxxy       
+    68      0.871953  1 Br fyzz              62     -0.819958  1 Br fxxz       
+    63     -0.656208  1 Br fxyy              60      0.564311  1 Br fxxx       
+    69     -0.249217  1 Br fzzz              54     -0.187161  1 Br fxyz       
+
+ Vector   41  Occ=0.000000D+00  E= 7.099234D-01
+              MO Center=  7.1D-16, -6.0D-16,  3.6D-16, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    64      2.331600  1 Br fxyz              68      1.248987  1 Br fyzz       
+    61     -1.224111  1 Br fxxy              67     -1.120996  1 Br fyyz       
+    65      0.733432  1 Br fxzz              62      0.614698  1 Br fxxz       
+    63      0.507103  1 Br fxyy              60     -0.413512  1 Br fxxx       
+    54     -0.256618  1 Br fxyz              69      0.168766  1 Br fzzz       
+
+ Vector   42  Occ=0.000000D+00  E= 7.277497D-01
+              MO Center= -1.0D-16,  5.6D-16, -4.7D-17, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    61      2.039365  1 Br fxxy              64      1.766585  1 Br fxyz       
+    63     -0.833999  1 Br fxyy              66     -0.807263  1 Br fyyy       
+    68      0.382424  1 Br fyzz              67     -0.340951  1 Br fyyz       
+    62      0.292442  1 Br fxxz              51     -0.240097  1 Br fxxy       
+    60      0.238231  1 Br fxxx              54     -0.207982  1 Br fxyz       
+
+ Vector   43  Occ=0.000000D+00  E= 7.277497D-01
+              MO Center= -7.6D-16, -2.0D-16, -3.3D-16, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    63      2.222377  1 Br fxyy              67      0.962500  1 Br fyyz       
+    62     -0.810596  1 Br fxxz              61      0.772071  1 Br fxxy       
+    64      0.631556  1 Br fxyz              60     -0.623802  1 Br fxxx       
+    65     -0.350971  1 Br fxzz              66     -0.300277  1 Br fyyy       
+    53     -0.261643  1 Br fxyy              68      0.128761  1 Br fyzz       
+
+ Vector   44  Occ=0.000000D+00  E= 8.158147D-01
+              MO Center=  1.5D-12,  9.2D-13, -1.4D-12, r^2= 6.8D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     6     24.254824  1 Br s                  5     -7.460915  1 Br s          
+    38     -5.900606  1 Br dxx               41     -5.899518  1 Br dyy        
+    43     -5.905402  1 Br dzz                7      5.729702  1 Br s          
+    44     -4.855041  1 Br dxx               47     -4.856999  1 Br dyy        
+    49     -4.846414  1 Br dzz                4     -2.378628  1 Br s          
+
+ Vector   45  Occ=0.000000D+00  E= 8.736153D-01
+              MO Center= -7.0D-13,  1.6D-14,  1.6D-12, r^2= 5.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    16      9.356570  1 Br pz                13      4.904676  1 Br pz         
+    67     -4.881983  1 Br fyyz              62     -4.847237  1 Br fxxz       
+    69     -4.819372  1 Br fzzz              22      4.202626  1 Br pz         
+    14     -4.024456  1 Br px                52     -2.672725  1 Br fxxz       
+    57     -2.685356  1 Br fyyz              59     -2.662594  1 Br fzzz       
+
+ Vector   46  Occ=0.000000D+00  E= 8.970164D-01
+              MO Center= -8.4D-13, -1.6D-13, -3.5D-13, r^2= 5.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    14      9.438750  1 Br px                11      4.952677  1 Br px         
+    60     -4.823978  1 Br fxxx              63     -4.834846  1 Br fxyy       
+    65     -4.797923  1 Br fxzz              20      4.131531  1 Br px         
+    16      4.047444  1 Br pz                50     -2.689900  1 Br fxxx       
+    53     -2.694530  1 Br fxyy              55     -2.678801  1 Br fxzz       
+
+ Vector   47  Occ=0.000000D+00  E= 8.970164D-01
+              MO Center=  9.8D-14, -6.8D-13,  4.4D-14, r^2= 5.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    15     10.269707  1 Br py                12      5.388695  1 Br py         
+    61     -5.248606  1 Br fxxy              66     -5.260419  1 Br fyyy       
+    68     -5.196941  1 Br fyzz              21      4.495257  1 Br py         
+    51     -2.926685  1 Br fxxy              56     -2.931717  1 Br fyyy       
+    58     -2.904677  1 Br fyzz              18     -2.720055  1 Br py         
+
+ Vector   48  Occ=0.000000D+00  E= 1.533998D+00
+              MO Center=  1.4D-12,  5.4D-13, -1.0D-12, r^2= 8.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     6     62.224901  1 Br s                  5    -18.565201  1 Br s          
+    38    -18.115619  1 Br dxx               41    -18.106739  1 Br dyy        
+    43    -18.154751  1 Br dzz               44     -8.143364  1 Br dxx        
+    47     -8.146555  1 Br dyy               49     -8.129301  1 Br dzz        
+     7      7.043475  1 Br s                 32     -2.982048  1 Br dxx        
+
+ Vector   49  Occ=0.000000D+00  E= 1.829463D+00
+              MO Center= -1.1D-14, -1.1D-14,  1.7D-14, r^2= 1.7D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    34      1.719092  1 Br dxz               40     -1.693332  1 Br dxz        
+     6      1.418529  1 Br s                 37     -1.295851  1 Br dzz        
+    41     -1.217397  1 Br dyy               38     -0.853334  1 Br dxx        
+    43      0.750934  1 Br dzz               35      0.702423  1 Br dyy        
+    46      0.684789  1 Br dxz               49     -0.648708  1 Br dzz        
+
+ Vector   50  Occ=0.000000D+00  E= 1.837968D+00
+              MO Center= -1.5D-14, -3.2D-16,  2.0D-14, r^2= 1.7D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    36      2.251085  1 Br dyz               42     -2.212829  1 Br dyz        
+    33     -0.977126  1 Br dxy               39      0.960521  1 Br dxy        
+    48      0.893771  1 Br dyz               34     -0.821079  1 Br dxz        
+    40      0.807125  1 Br dxz               30     -0.658797  1 Br dyz        
+    37     -0.453627  1 Br dzz               43      0.445918  1 Br dzz        
+
+ Vector   51  Occ=0.000000D+00  E= 1.837968D+00
+              MO Center=  8.4D-15,  9.1D-16,  8.9D-15, r^2= 1.7D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    34      1.693796  1 Br dxz               40     -1.665011  1 Br dxz        
+    36      1.119203  1 Br dyz               42     -1.100183  1 Br dyz        
+    32     -0.892062  1 Br dxx               37      0.883898  1 Br dzz        
+    38      0.876902  1 Br dxx               43     -0.868877  1 Br dzz        
+    46      0.672505  1 Br dxz               28     -0.495702  1 Br dxz        
+
+ Vector   52  Occ=0.000000D+00  E= 1.867602D+00
+              MO Center=  7.2D-15, -2.5D-14,  6.2D-15, r^2= 1.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    33      1.461132  1 Br dxy               39     -1.428662  1 Br dxy        
+    35      1.116678  1 Br dyy               41     -1.091863  1 Br dyy        
+    32     -0.938501  1 Br dxx               38      0.917645  1 Br dxx        
+    34     -0.818058  1 Br dxz               40      0.799879  1 Br dxz        
+    36      0.612077  1 Br dyz               42     -0.598475  1 Br dyz        
+
+ Vector   53  Occ=0.000000D+00  E= 1.867602D+00
+              MO Center= -9.2D-15,  1.4D-14, -1.2D-14, r^2= 1.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    33      2.047453  1 Br dxy               39     -2.001954  1 Br dxy        
+    36      0.892275  1 Br dyz               42     -0.872446  1 Br dyz        
+    45      0.805055  1 Br dxy               35     -0.792023  1 Br dyy        
+    41      0.774423  1 Br dyy               32      0.673861  1 Br dxx        
+    38     -0.658886  1 Br dxx               27     -0.598863  1 Br dxy        
+
+ Vector   54  Occ=0.000000D+00  E= 1.873658D+00
+              MO Center= -1.1D-14, -7.0D-15, -7.7D-15, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    55      2.782147  1 Br fxzz              57      1.987725  1 Br fyyz       
+    65     -1.872477  1 Br fxzz              67     -1.359833  1 Br fyyz       
+    53     -0.854962  1 Br fxyy              59     -0.830643  1 Br fzzz       
+    50     -0.630853  1 Br fxxx              63      0.584893  1 Br fxyy       
+    69      0.544363  1 Br fzzz              60      0.433476  1 Br fxxx       
+
+ Vector   55  Occ=0.000000D+00  E= 1.878833D+00
+              MO Center=  2.0D-14, -3.2D-15, -9.8D-15, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    54      2.915960  1 Br fxyz              58     -2.576635  1 Br fyzz       
+    64     -1.967471  1 Br fxyz              68      1.718239  1 Br fyzz       
+    52     -1.340591  1 Br fxxz              62      0.908619  1 Br fxxz       
+    56      0.781951  1 Br fyyy              55      0.583881  1 Br fxzz       
+    66     -0.547883  1 Br fyyy              59      0.521353  1 Br fzzz       
+
+ Vector   56  Occ=0.000000D+00  E= 1.878833D+00
+              MO Center=  2.0D-15,  8.8D-15, -1.3D-14, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    52      2.728294  1 Br fxxz              62     -1.848800  1 Br fxxz       
+    54      1.395702  1 Br fxyz              58     -1.298294  1 Br fyzz       
+    55     -1.243398  1 Br fxzz              59     -1.014125  1 Br fzzz       
+    64     -0.941715  1 Br fxyz              68      0.865964  1 Br fyzz       
+    65      0.820294  1 Br fxzz              53      0.729882  1 Br fxyy       
+
+ Vector   57  Occ=0.000000D+00  E= 1.894824D+00
+              MO Center=  3.6D-15,  5.9D-15, -7.1D-16, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    54      2.279367  1 Br fxyz              57      2.105600  1 Br fyyz       
+    64     -1.531863  1 Br fxyz              67     -1.415082  1 Br fyyz       
+    55     -1.392509  1 Br fxzz              51     -1.214850  1 Br fxxy       
+    58      1.168691  1 Br fyzz              52     -1.101400  1 Br fxxz       
+    65      0.935844  1 Br fxzz              53     -0.881464  1 Br fxyy       
+
+ Vector   58  Occ=0.000000D+00  E= 1.894824D+00
+              MO Center=  9.0D-15, -5.2D-15,  1.1D-14, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    54      3.131831  1 Br fxyz              64     -2.104767  1 Br fxyz       
+    58      1.677602  1 Br fyzz              51     -1.644258  1 Br fxxy       
+    57     -1.502539  1 Br fyyz              68     -1.127443  1 Br fyzz       
+    61      1.105034  1 Br fxxy              67      1.009791  1 Br fyyz       
+    55      0.983049  1 Br fxzz              52      0.823970  1 Br fxxz       
+
+ Vector   59  Occ=0.000000D+00  E= 1.922578D+00
+              MO Center=  8.1D-15, -6.2D-15,  3.5D-15, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    53      2.367867  1 Br fxyy              51     -1.925349  1 Br fxxy       
+    54     -1.691013  1 Br fxyz              63     -1.581197  1 Br fxyy       
+    61      1.285696  1 Br fxxy              64      1.129213  1 Br fxyz       
+    57      1.001620  1 Br fyyz              52     -0.849795  1 Br fxxz       
+    56      0.765456  1 Br fyyy              50     -0.669519  1 Br fxxx       
+
+ Vector   60  Occ=0.000000D+00  E= 1.922578D+00
+              MO Center= -1.1D-14,  8.5D-15, -5.0D-15, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    51      2.180840  1 Br fxxy              53      2.102711  1 Br fxyy       
+    54      1.845194  1 Br fxyz              61     -1.456306  1 Br fxxy       
+    63     -1.404133  1 Br fxyy              64     -1.232171  1 Br fxyz       
+    57      0.923283  1 Br fyyz              56     -0.856965  1 Br fyyy       
+    52     -0.774267  1 Br fxxz              67     -0.616544  1 Br fyyz       
+
+ Vector   61  Occ=0.000000D+00  E= 2.195799D+00
+              MO Center= -6.5D-13,  1.2D-14,  1.5D-12, r^2= 3.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    16     23.993663  1 Br pz                13     13.759440  1 Br pz         
+    14    -10.320177  1 Br px                19     -8.066463  1 Br pz         
+    62     -7.700648  1 Br fxxz              67     -7.705554  1 Br fyyz       
+    69     -7.696713  1 Br fzzz              52     -6.725243  1 Br fxxz       
+    57     -6.710763  1 Br fyyz              59     -6.736857  1 Br fzzz       
+
+ Vector   62  Occ=0.000000D+00  E= 2.224340D+00
+              MO Center= -1.1D-12, -1.4D-13, -4.7D-13, r^2= 3.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    14     23.904681  1 Br px                11     13.705645  1 Br px         
+    16     10.258983  1 Br pz                17     -8.025750  1 Br px         
+    60     -7.644061  1 Br fxxx              63     -7.645557  1 Br fxyy       
+    65     -7.640472  1 Br fxzz              50     -6.714959  1 Br fxxx       
+    53     -6.710281  1 Br fxyy              55     -6.726187  1 Br fxzz       
+
+ Vector   63  Occ=0.000000D+00  E= 2.224340D+00
+              MO Center=  4.5D-14, -3.7D-13,  2.0D-14, r^2= 3.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    15     26.012484  1 Br py                12     14.914145  1 Br py         
+    18     -8.733423  1 Br py                61     -8.318073  1 Br fxxy       
+    66     -8.319699  1 Br fyyy              68     -8.310947  1 Br fyzz       
+    51     -7.307072  1 Br fxxy              56     -7.301985  1 Br fyyy       
+    58     -7.329366  1 Br fyzz              21      4.173370  1 Br py         
+
+ Vector   64  Occ=0.000000D+00  E= 4.199106D+00
+              MO Center=  1.1D-12, -5.5D-15, -1.6D-12, r^2= 1.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     6     -8.444873  1 Br s                  5      8.296411  1 Br s          
+     3     -6.642679  1 Br s                  4     -5.202807  1 Br s          
+    38      3.710441  1 Br dxx               41      3.710558  1 Br dyy        
+    43      3.709925  1 Br dzz                2     -2.348608  1 Br s          
+     7      0.449527  1 Br s                 32     -0.373507  1 Br dxx        
+
+ Vector   65  Occ=0.000000D+00  E= 4.289617D+00
+              MO Center= -9.7D-13,  1.9D-14,  2.3D-12, r^2= 2.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    16     35.597700  1 Br pz                13     19.037596  1 Br pz         
+    14    -15.311316  1 Br px                52    -12.855936  1 Br fxxz       
+    57    -12.863145  1 Br fyyz              59    -12.850155  1 Br fzzz       
+    62     -8.811943  1 Br fxxz              67     -8.807682  1 Br fyyz       
+    69     -8.815361  1 Br fzzz              11     -8.188469  1 Br px         
+
+ Vector   66  Occ=0.000000D+00  E= 4.327167D+00
+              MO Center= -8.9D-13,  1.2D-14, -3.8D-13, r^2= 2.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    14     35.480894  1 Br px                11     18.972161  1 Br px         
+    16     15.265019  1 Br pz                50    -12.821956  1 Br fxxx       
+    53    -12.824391  1 Br fxyy              55    -12.816095  1 Br fxzz       
+    60     -8.774886  1 Br fxxx              63     -8.773408  1 Br fxyy       
+    65     -8.778443  1 Br fxzz              13      8.162432  1 Br pz         
+
+ Vector   67  Occ=0.000000D+00  E= 4.327167D+00
+              MO Center=  6.2D-16, -2.0D-13, -1.3D-15, r^2= 2.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    15     38.624433  1 Br py                12     20.653058  1 Br py         
+    51    -13.957958  1 Br fxxy              56    -13.960609  1 Br fyyy       
+    58    -13.946270  1 Br fyzz              61     -9.552323  1 Br fxxy       
+    66     -9.550715  1 Br fyyy              68     -9.559417  1 Br fyzz       
+    18     -8.916330  1 Br py                21      3.558124  1 Br py         
+
+ Vector   68  Occ=0.000000D+00  E= 9.168271D+00
+              MO Center=  1.1D-13, -1.4D-14, -1.2D-13, r^2= 3.0D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     4     45.887217  1 Br s                  6     42.209182  1 Br s          
+     3     35.583161  1 Br s                  5    -20.815789  1 Br s          
+    38    -18.560451  1 Br dxx               41    -18.559922  1 Br dyy        
+    43    -18.562782  1 Br dzz               32    -13.242061  1 Br dxx        
+    35    -13.242559  1 Br dyy               37    -13.239868  1 Br dzz        
+
+ Vector   69  Occ=0.000000D+00  E= 7.761138D+01
+              MO Center=  3.4D-16,  1.1D-17,  1.5D-17, r^2= 4.7D-02
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3     26.512412  1 Br s                 26    -15.970316  1 Br dxx        
+    29    -15.970316  1 Br dyy               31    -15.970313  1 Br dzz        
+     2     15.291487  1 Br s                  5     13.057413  1 Br s          
+     4      5.179658  1 Br s                 32     -4.093201  1 Br dxx        
+    35     -4.093201  1 Br dyy               37     -4.093199  1 Br dzz        
+
+
+                     DFT Final Beta Molecular Orbital Analysis
+                     -----------------------------------------
+
+ Vector    1  Occ=1.000000D+00  E=-4.810820D+02
+              MO Center=  1.0D-21, -8.9D-20,  6.3D-20, r^2= 7.2D-04
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     1      1.000674  1 Br s          
+
+ Vector    2  Occ=1.000000D+00  E=-6.186720D+01
+              MO Center=  6.8D-16, -3.0D-16, -1.6D-15, r^2= 1.2D-02
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     2      0.968663  1 Br s                  3     -0.061769  1 Br s          
+     6     -0.037107  1 Br s                  4     -0.032728  1 Br s          
+    26      0.030930  1 Br dxx               29      0.030917  1 Br dyy        
+    31      0.030991  1 Br dzz        
+
+ Vector    3  Occ=1.000000D+00  E=-5.578277D+01
+              MO Center= -6.0D-16,  1.6D-17,  1.5D-15, r^2= 9.5D-03
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    10      0.918743  1 Br pz                 8     -0.395171  1 Br px         
+
+ Vector    4  Occ=1.000000D+00  E=-5.577820D+01
+              MO Center= -7.5D-17,  1.0D-16, -2.3D-17, r^2= 9.5D-03
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     9      0.899492  1 Br py                 8     -0.399252  1 Br px         
+    10     -0.178326  1 Br pz         
+
+ Vector    5  Occ=1.000000D+00  E=-5.577820D+01
+              MO Center=  1.8D-16,  6.3D-17,  2.3D-17, r^2= 9.5D-03
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     8      0.827482  1 Br px                 9      0.437215  1 Br py         
+    10      0.352709  1 Br pz         
+
+ Vector    6  Occ=1.000000D+00  E=-8.450992D+00
+              MO Center= -2.7D-16,  2.6D-16,  2.0D-17, r^2= 1.0D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3      0.938452  1 Br s                  5      0.061363  1 Br s          
+
+ Vector    7  Occ=1.000000D+00  E=-6.330067D+00
+              MO Center=  5.7D-16, -1.9D-16, -7.5D-16, r^2= 1.1D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    13      0.923073  1 Br pz                11     -0.397033  1 Br px         
+    16      0.056784  1 Br pz                19      0.035471  1 Br pz         
+
+ Vector    8  Occ=1.000000D+00  E=-6.314108D+00
+              MO Center=  7.4D-17, -3.9D-16, -1.6D-16, r^2= 1.1D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    12      0.941591  1 Br py                11     -0.316663  1 Br px         
+    13     -0.143112  1 Br pz                15      0.055276  1 Br py         
+    18      0.035998  1 Br py         
+
+ Vector    9  Occ=1.000000D+00  E=-6.314108D+00
+              MO Center=  4.5D-16,  3.3D-16, -1.3D-16, r^2= 1.1D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    11      0.865918  1 Br px                13      0.369900  1 Br pz         
+    12      0.347435  1 Br py                14      0.050834  1 Br px         
+    17      0.033105  1 Br px         
+
+ Vector   10  Occ=1.000000D+00  E=-2.529971D+00
+              MO Center= -7.4D-17,  1.1D-16,  5.1D-16, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    28      1.053030  1 Br dxz               31     -0.740649  1 Br dzz        
+    29      0.483394  1 Br dyy               26      0.256995  1 Br dxx        
+    34      0.090196  1 Br dxz               37     -0.060884  1 Br dzz        
+    35      0.043959  1 Br dyy        
+
+ Vector   11  Occ=1.000000D+00  E=-2.526591D+00
+              MO Center=  4.2D-17,  1.1D-16,  2.7D-17, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    30      1.484395  1 Br dyz               27     -0.635209  1 Br dxy        
+    28      0.313571  1 Br dxz               26     -0.163019  1 Br dxx        
+    31      0.152136  1 Br dzz               36      0.127565  1 Br dyz        
+    33     -0.054588  1 Br dxy               34      0.026947  1 Br dxz        
+
+ Vector   12  Occ=1.000000D+00  E=-2.526591D+00
+              MO Center= -7.6D-17, -5.7D-19,  1.5D-16, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    28      1.108350  1 Br dxz               31      0.588617  1 Br dzz        
+    26     -0.585621  1 Br dxx               30     -0.403951  1 Br dyz        
+    27      0.185595  1 Br dxy               34      0.095249  1 Br dxz        
+    37      0.050584  1 Br dzz               32     -0.050327  1 Br dxx        
+    36     -0.034715  1 Br dyz        
+
+ Vector   13  Occ=1.000000D+00  E=-2.515465D+00
+              MO Center=  3.0D-17,  3.5D-17,  3.8D-17, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    29      0.742446  1 Br dyy               27      0.715214  1 Br dxy        
+    26     -0.624664  1 Br dxx               28     -0.542610  1 Br dxz        
+    30      0.296733  1 Br dyz               31     -0.117783  1 Br dzz        
+    35      0.063767  1 Br dyy               33      0.061428  1 Br dxy        
+    32     -0.053651  1 Br dxx               34     -0.046603  1 Br dxz        
+
+ Vector   14  Occ=1.000000D+00  E=-2.515465D+00
+              MO Center= -9.6D-17, -7.1D-17, -4.3D-17, r^2= 1.2D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    27      1.362034  1 Br dxy               30      0.591520  1 Br dyz        
+    29     -0.387122  1 Br dyy               26      0.330329  1 Br dxx        
+    28      0.274169  1 Br dxz               33      0.116982  1 Br dxy        
+    31      0.056793  1 Br dzz               36      0.050804  1 Br dyz        
+    35     -0.033249  1 Br dyy               32      0.028371  1 Br dxx        
+
+ Vector   15  Occ=1.000000D+00  E=-6.947167D-01
+              MO Center= -6.0D-16,  3.1D-16,  4.5D-16, r^2= 9.4D-01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     4      0.647345  1 Br s                  6      0.405309  1 Br s          
+     5      0.282846  1 Br s                 43     -0.042264  1 Br dzz        
+     3     -0.035851  1 Br s                 38     -0.035731  1 Br dxx        
+     7      0.034275  1 Br s                 41     -0.034249  1 Br dyy        
+    47     -0.025741  1 Br dyy               44     -0.025541  1 Br dxx        
+
+ Vector   16  Occ=1.000000D+00  E=-2.744188D-01
+              MO Center=  1.5D-16,  3.1D-16,  4.8D-16, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    14      0.349461  1 Br px                17      0.286139  1 Br px         
+    20      0.215170  1 Br px                15      0.204958  1 Br py         
+    18      0.167820  1 Br py                16      0.148807  1 Br pz         
+    21      0.126197  1 Br py                19      0.121843  1 Br pz         
+    22      0.091623  1 Br pz                11     -0.079327  1 Br px         
+
+ Vector   17  Occ=1.000000D+00  E=-2.744188D-01
+              MO Center=  5.3D-16, -4.3D-16,  3.8D-16, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    15      0.379813  1 Br py                18      0.310992  1 Br py         
+    21      0.233858  1 Br py                14     -0.187273  1 Br px         
+    17     -0.153340  1 Br px                20     -0.115308  1 Br px         
+    12     -0.086217  1 Br py                16     -0.083337  1 Br pz         
+    19     -0.068237  1 Br pz                22     -0.051312  1 Br pz         
+
+ Vector   18  Occ=0.000000D+00  E=-2.664539D-01
+              MO Center= -5.0D-16,  8.6D-16, -1.2D-17, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    16      0.406617  1 Br pz                19      0.327658  1 Br pz         
+    22      0.248039  1 Br pz                14     -0.174894  1 Br px         
+    17     -0.140932  1 Br px                20     -0.106687  1 Br px         
+    13     -0.086895  1 Br pz                67      0.056175  1 Br fyyz       
+    62      0.050523  1 Br fxxz              69      0.045990  1 Br fzzz       
+
+ Vector   19  Occ=0.000000D+00  E= 9.426594D-04
+              MO Center= -7.1D-15, -8.3D-14,  3.5D-14, r^2= 9.0D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     7      2.841647  1 Br s                  6      0.823680  1 Br s          
+     5     -0.685670  1 Br s                 49     -0.678487  1 Br dzz        
+    44     -0.659323  1 Br dxx               47     -0.654973  1 Br dyy        
+    38     -0.492765  1 Br dxx               41     -0.493639  1 Br dyy        
+    43     -0.488916  1 Br dzz                4     -0.358457  1 Br s          
+
+ Vector   20  Occ=0.000000D+00  E= 4.256163D-02
+              MO Center= -1.5D-14,  6.0D-14, -5.7D-15, r^2= 1.3D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    24      1.277122  1 Br py                15     -0.813298  1 Br py         
+    21     -0.776329  1 Br py                23     -0.378618  1 Br px         
+    12     -0.353207  1 Br py                61      0.344646  1 Br fxxy       
+    66      0.344578  1 Br fyyy              68      0.344944  1 Br fyzz       
+    14      0.241112  1 Br px                20      0.230152  1 Br px         
+
+ Vector   21  Occ=0.000000D+00  E= 4.256164D-02
+              MO Center=  7.6D-15,  9.0D-15,  6.2D-15, r^2= 1.3D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    23      1.174323  1 Br px                14     -0.747834  1 Br px         
+    20     -0.713840  1 Br px                25      0.502083  1 Br pz         
+    24      0.415854  1 Br py                11     -0.324777  1 Br px         
+    16     -0.319738  1 Br pz                60      0.316904  1 Br fxxx       
+    63      0.316841  1 Br fxyy              65      0.317055  1 Br fxzz       
+
+ Vector   22  Occ=0.000000D+00  E= 4.668979D-02
+              MO Center=  1.2D-14, -1.5D-15, -1.8D-14, r^2= 1.3D+01
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    25      1.238585  1 Br pz                16     -0.832229  1 Br pz         
+    22     -0.769449  1 Br pz                23     -0.532776  1 Br px         
+    13     -0.365916  1 Br pz                14      0.357981  1 Br px         
+    62      0.352339  1 Br fxxz              67      0.353444  1 Br fyyz       
+    69      0.351453  1 Br fzzz              20      0.330977  1 Br px         
+
+ Vector   23  Occ=0.000000D+00  E= 1.447994D-01
+              MO Center= -6.3D-16, -6.3D-15, -5.2D-16, r^2= 4.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    45      1.206187  1 Br dxy               48      0.511730  1 Br dyz        
+    47      0.482085  1 Br dyy               44     -0.403631  1 Br dxx        
+    46     -0.356071  1 Br dxz               33      0.168558  1 Br dxy        
+    27     -0.137714  1 Br dxy               49     -0.078454  1 Br dzz        
+    36      0.071511  1 Br dyz               35      0.067369  1 Br dyy        
+
+ Vector   24  Occ=0.000000D+00  E= 1.447994D-01
+              MO Center=  3.6D-15,  1.3D-15,  1.8D-15, r^2= 4.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    45      0.882246  1 Br dxy               47     -0.655102  1 Br dyy        
+    44      0.555206  1 Br dxx               46      0.471140  1 Br dxz        
+    48      0.389084  1 Br dyz               33      0.123289  1 Br dxy        
+    27     -0.100728  1 Br dxy               49      0.099896  1 Br dzz        
+    35     -0.091547  1 Br dyy               32      0.077587  1 Br dxx        
+
+ Vector   25  Occ=0.000000D+00  E= 1.464930D-01
+              MO Center=  1.5D-15,  3.7D-15, -5.1D-15, r^2= 4.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    48      1.448249  1 Br dyz               45     -0.626028  1 Br dxy        
+    46     -0.283568  1 Br dxz               36      0.201876  1 Br dyz        
+    30     -0.163475  1 Br dyz               49     -0.162706  1 Br dzz        
+    44      0.152071  1 Br dxx               33     -0.087264  1 Br dxy        
+    27      0.070665  1 Br dxy               34     -0.039527  1 Br dxz        
+
+ Vector   26  Occ=0.000000D+00  E= 1.464930D-01
+              MO Center= -7.4D-15, -2.2D-15, -3.4D-15, r^2= 4.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    46      1.087255  1 Br dxz               44     -0.573168  1 Br dxx        
+    49      0.570314  1 Br dzz               48      0.393248  1 Br dyz        
+    45     -0.157566  1 Br dxy               34      0.151556  1 Br dxz        
+    28     -0.122727  1 Br dxz               32     -0.079896  1 Br dxx        
+    37      0.079498  1 Br dzz               26      0.064698  1 Br dxx        
+
+ Vector   27  Occ=0.000000D+00  E= 1.525805D-01
+              MO Center=  3.4D-15, -8.7D-16, -3.4D-16, r^2= 4.4D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    46      1.031824  1 Br dxz               49     -0.660821  1 Br dzz        
+    47      0.538559  1 Br dyy               44      0.316716  1 Br dxx        
+     7     -0.151833  1 Br s                  6     -0.148630  1 Br s          
+    34      0.142603  1 Br dxz               28     -0.114649  1 Br dxz        
+    37     -0.091910  1 Br dzz               31      0.079734  1 Br dzz        
+
+ Vector   28  Occ=0.000000D+00  E= 2.166134D-01
+              MO Center=  3.2D-14, -1.8D-13,  1.6D-13, r^2= 9.8D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     6      5.845601  1 Br s                  7      5.416234  1 Br s          
+    49     -2.742933  1 Br dzz               44     -2.721019  1 Br dxx        
+    47     -2.716046  1 Br dyy                5     -2.023939  1 Br s          
+    38     -1.988771  1 Br dxx               41     -1.989451  1 Br dyy        
+    43     -1.985774  1 Br dzz                3     -0.475790  1 Br s          
+
+ Vector   29  Occ=0.000000D+00  E= 2.811478D-01
+              MO Center= -5.0D-14,  1.6D-13, -1.7D-14, r^2= 9.0D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    21      3.806635  1 Br py                15      3.085337  1 Br py         
+    61     -2.096879  1 Br fxxy              66     -2.096828  1 Br fyyy       
+    68     -2.097101  1 Br fyzz              12      1.897431  1 Br py         
+    18     -1.474743  1 Br py                24     -1.257959  1 Br py         
+    51     -1.189185  1 Br fxxy              56     -1.189364  1 Br fyyy       
+
+ Vector   30  Occ=0.000000D+00  E= 2.811478D-01
+              MO Center= -4.6D-15,  2.7D-15, -5.9D-15, r^2= 9.0D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    20      3.500150  1 Br px                14      2.836927  1 Br px         
+    60     -1.928052  1 Br fxxx              63     -1.928005  1 Br fxyy       
+    65     -1.928164  1 Br fxzz              11      1.744662  1 Br px         
+    22      1.496710  1 Br pz                17     -1.356007  1 Br px         
+    16      1.213107  1 Br pz                21      1.201428  1 Br py         
+
+ Vector   31  Occ=0.000000D+00  E= 2.841975D-01
+              MO Center=  5.1D-14, -1.3D-17, -1.0D-13, r^2= 9.0D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    22      3.657945  1 Br pz                16      2.934339  1 Br pz         
+    62     -2.006547  1 Br fxxz              67     -2.001496  1 Br fyyz       
+    69     -2.010598  1 Br fzzz              13      1.808842  1 Br pz         
+    20     -1.573396  1 Br px                19     -1.413637  1 Br pz         
+    14     -1.262151  1 Br px                25     -1.207377  1 Br pz         
+
+ Vector   32  Occ=0.000000D+00  E= 5.509027D-01
+              MO Center=  1.2D-15, -1.0D-15,  3.6D-16, r^2= 3.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    39      1.887402  1 Br dxy               45     -1.508934  1 Br dxy        
+    42      0.805004  1 Br dyz               48     -0.643582  1 Br dyz        
+    41      0.463800  1 Br dyy               38     -0.386386  1 Br dxx        
+    47     -0.370798  1 Br dyy               40     -0.346234  1 Br dxz        
+    44      0.308906  1 Br dxx               27     -0.298158  1 Br dxy        
+
+ Vector   33  Occ=0.000000D+00  E= 5.509027D-01
+              MO Center=  1.2D-15,  3.1D-15,  3.4D-16, r^2= 3.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    41      1.025925  1 Br dyy               38     -0.868058  1 Br dxx        
+    39     -0.846676  1 Br dxy               47     -0.820203  1 Br dyy        
+    40     -0.740529  1 Br dxz               44      0.693992  1 Br dxx        
+    45      0.676898  1 Br dxy               46      0.592035  1 Br dxz        
+    42     -0.379227  1 Br dyz               48      0.303183  1 Br dyz        
+
+ Vector   34  Occ=0.000000D+00  E= 5.543590D-01
+              MO Center= -4.1D-16,  1.4D-16,  9.6D-16, r^2= 3.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    42      1.989264  1 Br dyz               48     -1.585702  1 Br dyz        
+    39     -0.860055  1 Br dxy               45      0.685576  1 Br dxy        
+    40     -0.404862  1 Br dxz               46      0.322728  1 Br dxz        
+    30     -0.315172  1 Br dyz               43     -0.231596  1 Br dzz        
+    38      0.216987  1 Br dxx               49      0.184612  1 Br dzz        
+
+ Vector   35  Occ=0.000000D+00  E= 5.543590D-01
+              MO Center= -2.8D-15, -6.3D-16, -5.8D-15, r^2= 3.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    40      1.493573  1 Br dxz               46     -1.190572  1 Br dxz        
+    38     -0.787329  1 Br dxx               43      0.783259  1 Br dzz        
+    44      0.627603  1 Br dxx               49     -0.624360  1 Br dzz        
+    42      0.560671  1 Br dyz               48     -0.446928  1 Br dyz        
+    28     -0.236637  1 Br dxz               39     -0.225253  1 Br dxy        
+
+ Vector   36  Occ=0.000000D+00  E= 5.633166D-01
+              MO Center= -1.8D-16, -8.6D-16, -4.4D-15, r^2= 3.3D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    40      1.414078  1 Br dxz               46     -1.122529  1 Br dxz        
+    43     -1.083486  1 Br dzz               49      0.708120  1 Br dzz        
+    47     -0.596697  1 Br dyy               41      0.560226  1 Br dyy        
+     6      0.366243  1 Br s                 44     -0.355353  1 Br dxx        
+    38      0.256199  1 Br dxx               28     -0.224312  1 Br dxz        
+
+ Vector   37  Occ=0.000000D+00  E= 7.281385D-01
+              MO Center= -3.8D-16,  2.7D-16, -1.7D-16, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    61      2.181660  1 Br fxxy              64      1.876061  1 Br fxyz       
+    66     -0.861613  1 Br fyyy              68      0.403178  1 Br fyzz       
+    51     -0.258719  1 Br fxxy              54     -0.222479  1 Br fxyz       
+    56      0.102177  1 Br fyyy              58     -0.047812  1 Br fyzz       
+    63      0.047246  1 Br fxyy              67      0.039287  1 Br fyyz       
+
+ Vector   38  Occ=0.000000D+00  E= 7.281385D-01
+              MO Center= -5.7D-16, -8.9D-17, -2.4D-16, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    63      2.374718  1 Br fxyy              67      1.020983  1 Br fyyz       
+    62     -0.861811  1 Br fxxz              60     -0.668093  1 Br fxxx       
+    65     -0.370438  1 Br fxzz              53     -0.281614  1 Br fxyy       
+    57     -0.121077  1 Br fyyz              52      0.102201  1 Br fxxz       
+    50      0.079228  1 Br fxxx              64     -0.066744  1 Br fxyz       
+
+ Vector   39  Occ=0.000000D+00  E= 7.293666D-01
+              MO Center= -2.9D-16, -7.4D-17, -2.4D-16, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    64      2.904900  1 Br fxyz              61     -1.532914  1 Br fxxy       
+    68      1.533579  1 Br fyzz              54     -0.346811  1 Br fxyz       
+    51      0.183012  1 Br fxxy              58     -0.183091  1 Br fyzz       
+    63      0.039157  1 Br fxyy              62      0.033303  1 Br fxxz       
+
+ Vector   40  Occ=0.000000D+00  E= 7.293666D-01
+              MO Center=  9.4D-16, -2.1D-15,  1.3D-15, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    67      1.940168  1 Br fyyz              65     -1.278533  1 Br fxzz       
+    62     -1.031203  1 Br fxxz              63     -0.834024  1 Br fxyy       
+    60      0.704186  1 Br fxxx              69     -0.302988  1 Br fzzz       
+    57     -0.231633  1 Br fyyz              55      0.152642  1 Br fxzz       
+    52      0.123113  1 Br fxxz              53      0.099573  1 Br fxyy       
+
+ Vector   41  Occ=0.000000D+00  E= 7.340047D-01
+              MO Center=  4.9D-16, -1.8D-16, -3.3D-16, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    62      2.083770  1 Br fxxz              64      0.999263  1 Br fxyz       
+    65     -0.914597  1 Br fxzz              68     -0.917091  1 Br fyzz       
+    69     -0.757988  1 Br fzzz              63      0.582680  1 Br fxyy       
+    66      0.291951  1 Br fyyy              52     -0.249492  1 Br fxxz       
+    67      0.227712  1 Br fyyz              60      0.139967  1 Br fxxx       
+
+ Vector   42  Occ=0.000000D+00  E= 7.340047D-01
+              MO Center= -6.5D-16, -2.3D-16,  1.1D-15, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    64      2.213274  1 Br fxyz              68     -1.925307  1 Br fyzz       
+    62     -0.967031  1 Br fxxz              66      0.625227  1 Br fyyy       
+    65      0.404209  1 Br fxzz              69      0.368518  1 Br fzzz       
+    54     -0.269230  1 Br fxyz              63     -0.250391  1 Br fxyy       
+    58      0.244360  1 Br fyzz              67     -0.156765  1 Br fyyz       
+
+ Vector   43  Occ=0.000000D+00  E= 7.374713D-01
+              MO Center=  3.5D-16, -2.5D-16,  4.6D-16, r^2= 2.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    65      2.054536  1 Br fxzz              67      1.579778  1 Br fyyz       
+    63     -0.679496  1 Br fxyy              69     -0.538802  1 Br fzzz       
+    60     -0.511031  1 Br fxxx              62      0.404092  1 Br fxxz       
+    55     -0.272517  1 Br fxzz              57     -0.147584  1 Br fyyz       
+    16     -0.128643  1 Br pz                59      0.112777  1 Br fzzz       
+
+ Vector   44  Occ=0.000000D+00  E= 8.317927D-01
+              MO Center=  1.7D-12, -8.1D-13,  9.4D-13, r^2= 6.8D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     6     24.671666  1 Br s                  5     -7.574734  1 Br s          
+    38     -6.020101  1 Br dxx               41     -6.025102  1 Br dyy        
+    43     -5.998065  1 Br dzz                7      5.741654  1 Br s          
+    44     -4.888346  1 Br dxx               47     -4.884733  1 Br dyy        
+    49     -4.904268  1 Br dzz                4     -2.416041  1 Br s          
+
+ Vector   45  Occ=0.000000D+00  E= 9.028652D-01
+              MO Center= -2.8D-13,  1.2D-12, -1.4D-13, r^2= 5.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    15     10.105590  1 Br py                12      5.303527  1 Br py         
+    61     -5.143137  1 Br fxxy              66     -5.140104  1 Br fyyy       
+    68     -5.156339  1 Br fyzz              21      4.393230  1 Br py         
+    51     -2.878743  1 Br fxxy              56     -2.879191  1 Br fyyy       
+    58     -2.876792  1 Br fyzz              18     -2.675742  1 Br py         
+
+ Vector   46  Occ=0.000000D+00  E= 9.028652D-01
+              MO Center= -1.4D-12, -4.1D-13, -5.8D-13, r^2= 5.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    14      9.290810  1 Br px                11      4.875921  1 Br px         
+    60     -4.728440  1 Br fxxx              63     -4.725646  1 Br fxyy       
+    65     -4.735121  1 Br fxzz              20      4.039019  1 Br px         
+    16      3.976026  1 Br pz                15      2.753791  1 Br py         
+    50     -2.646643  1 Br fxxx              53     -2.647056  1 Br fxyy       
+
+ Vector   47  Occ=0.000000D+00  E= 9.066838D-01
+              MO Center=  7.2D-14,  4.9D-18, -1.4D-13, r^2= 5.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    16      9.658691  1 Br pz                13      5.069584  1 Br pz         
+    62     -4.901249  1 Br fxxz              69     -4.916987  1 Br fzzz       
+    67     -4.881626  1 Br fyyz              22      4.187394  1 Br pz         
+    14     -4.154464  1 Br px                52     -2.756673  1 Br fxxz       
+    57     -2.757322  1 Br fyyz              59     -2.756152  1 Br fzzz       
+
+ Vector   48  Occ=0.000000D+00  E= 1.542885D+00
+              MO Center=  1.7D-12, -2.9D-13,  3.3D-13, r^2= 8.4D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     6     62.060048  1 Br s                  5    -18.513769  1 Br s          
+    38    -18.090329  1 Br dxx               41    -18.090263  1 Br dyy        
+    43    -18.090618  1 Br dzz               44     -8.105047  1 Br dxx        
+    47     -8.104960  1 Br dyy               49     -8.105432  1 Br dzz        
+     7      7.001788  1 Br s                 32     -2.969298  1 Br dxx        
+
+ Vector   49  Occ=0.000000D+00  E= 1.872079D+00
+              MO Center= -2.4D-14,  1.3D-15,  2.1D-14, r^2= 1.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    36      2.421606  1 Br dyz               42     -2.366971  1 Br dyz        
+    33     -1.046999  1 Br dxy               39      1.023377  1 Br dxy        
+    48      0.951349  1 Br dyz               30     -0.708184  1 Br dyz        
+    34     -0.490818  1 Br dxz               40      0.479745  1 Br dxz        
+    45     -0.411323  1 Br dxy               27      0.306188  1 Br dxy        
+
+ Vector   50  Occ=0.000000D+00  E= 1.872079D+00
+              MO Center=  8.6D-16, -6.9D-15,  9.2D-15, r^2= 1.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    34      1.818183  1 Br dxz               40     -1.777162  1 Br dxz        
+    32     -0.958437  1 Br dxx               37      0.953510  1 Br dzz        
+    38      0.936812  1 Br dxx               43     -0.931999  1 Br dzz        
+    46      0.714289  1 Br dxz               36      0.679801  1 Br dyz        
+    42     -0.664464  1 Br dyz               28     -0.531716  1 Br dxz        
+
+ Vector   51  Occ=0.000000D+00  E= 1.872153D+00
+              MO Center= -6.2D-15,  3.2D-17, -1.7D-14, r^2= 1.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    33      2.510930  1 Br dxy               39     -2.452501  1 Br dxy        
+    36      1.078767  1 Br dyz               42     -1.053664  1 Br dyz        
+    45      0.985665  1 Br dxy               27     -0.734448  1 Br dxy        
+    48      0.423470  1 Br dyz               30     -0.315540  1 Br dyz        
+    35      0.087293  1 Br dyy               41     -0.085261  1 Br dyy        
+
+ Vector   52  Occ=0.000000D+00  E= 1.872153D+00
+              MO Center=  2.9D-15, -2.5D-14, -2.1D-15, r^2= 1.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    35      1.366397  1 Br dyy               41     -1.334601  1 Br dyy        
+    32     -1.153548  1 Br dxx               38      1.126705  1 Br dxx        
+    34     -0.991196  1 Br dxz               40      0.968130  1 Br dxz        
+    47      0.536379  1 Br dyy               44     -0.452825  1 Br dxx        
+    29     -0.399672  1 Br dyy               46     -0.389094  1 Br dxz        
+
+ Vector   53  Occ=0.000000D+00  E= 1.876640D+00
+              MO Center= -7.9D-15, -6.8D-15, -8.3D-16, r^2= 1.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    34      1.721406  1 Br dxz               40     -1.682846  1 Br dxz        
+    37     -1.198592  1 Br dzz               43      1.197826  1 Br dzz        
+    35      0.802361  1 Br dyy               41     -0.758304  1 Br dyy        
+    46      0.676482  1 Br dxz               28     -0.503248  1 Br dxz        
+    49     -0.468849  1 Br dzz               32      0.432259  1 Br dxx        
+
+ Vector   54  Occ=0.000000D+00  E= 1.924562D+00
+              MO Center= -4.4D-15,  6.7D-15, -1.9D-15, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    51      2.908276  1 Br fxxy              54      2.502685  1 Br fxyz       
+    61     -1.940666  1 Br fxxy              64     -1.670019  1 Br fxyz       
+    56     -1.148835  1 Br fyyy              66      0.766607  1 Br fyyy       
+    58      0.538229  1 Br fyzz              68     -0.359155  1 Br fyzz       
+    53     -0.059025  1 Br fxyy              63      0.039387  1 Br fxyy       
+
+ Vector   55  Occ=0.000000D+00  E= 1.924562D+00
+              MO Center= -2.0D-15, -2.3D-15, -8.6D-16, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    53      3.165986  1 Br fxyy              63     -2.112634  1 Br fxyy       
+    57      1.362154  1 Br fyyz              52     -1.149536  1 Br fxxz       
+    67     -0.908953  1 Br fyyz              50     -0.890507  1 Br fxxx       
+    62      0.767075  1 Br fxxz              60      0.594227  1 Br fxxx       
+    55     -0.494466  1 Br fxzz              65      0.329953  1 Br fxzz       
+
+ Vector   56  Occ=0.000000D+00  E= 1.925326D+00
+              MO Center=  6.6D-15, -5.9D-15,  9.5D-15, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    54      3.085793  1 Br fxyz              64     -2.057732  1 Br fxyz       
+    58      1.653937  1 Br fyzz              51     -1.619739  1 Br fxxy       
+    57     -1.541421  1 Br fyyz              68     -1.102912  1 Br fyzz       
+    61      1.080108  1 Br fxxy              67      1.027882  1 Br fyyz       
+    55      1.008771  1 Br fxzz              52      0.844277  1 Br fxxz       
+
+ Vector   57  Occ=0.000000D+00  E= 1.925326D+00
+              MO Center= -6.0D-16,  1.2D-14,  1.1D-14, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    54      2.337163  1 Br fxyz              57      2.075218  1 Br fyyz       
+    64     -1.558515  1 Br fxyz              67     -1.383840  1 Br fyyz       
+    55     -1.372619  1 Br fxzz              51     -1.245178  1 Br fxxy       
+    58      1.199693  1 Br fyzz              52     -1.084783  1 Br fxxz       
+    65      0.915318  1 Br fxzz              53     -0.867776  1 Br fxyy       
+
+ Vector   58  Occ=0.000000D+00  E= 1.931179D+00
+              MO Center=  6.5D-15,  7.1D-15, -1.5D-14, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    54      2.282090  1 Br fxyz              52      2.125918  1 Br fxxz       
+    58     -2.079775  1 Br fyzz              64     -1.518898  1 Br fxyz       
+    62     -1.427849  1 Br fxxz              68      1.350265  1 Br fyzz       
+    55     -0.979977  1 Br fxzz              59     -0.783611  1 Br fzzz       
+    56      0.621626  1 Br fyyy              65      0.621687  1 Br fxzz       
+
+ Vector   59  Occ=0.000000D+00  E= 1.931179D+00
+              MO Center=  7.8D-15, -2.9D-15, -5.9D-15, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    54     -2.285256  1 Br fxyz              52      2.167138  1 Br fxxz       
+    58      1.999709  1 Br fyzz              64      1.521005  1 Br fxyz       
+    62     -1.456020  1 Br fxxz              68     -1.297786  1 Br fyzz       
+    55     -0.964314  1 Br fxzz              59     -0.828350  1 Br fzzz       
+    65      0.610696  1 Br fxzz              56     -0.606787  1 Br fyyy       
+
+ Vector   60  Occ=0.000000D+00  E= 1.935590D+00
+              MO Center= -4.8D-15, -1.7D-15,  3.0D-15, r^2= 1.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    55      2.797516  1 Br fxzz              57      1.941641  1 Br fyyz       
+    65     -1.805174  1 Br fxzz              67     -1.418799  1 Br fyyz       
+    59     -0.873276  1 Br fzzz              53     -0.835141  1 Br fxyy       
+    50     -0.611305  1 Br fxxx              63      0.610255  1 Br fxyy       
+    60      0.461423  1 Br fxxx              69      0.452898  1 Br fzzz       
+
+ Vector   61  Occ=0.000000D+00  E= 2.230960D+00
+              MO Center= -1.9D-13,  8.0D-13, -8.9D-14, r^2= 3.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    15     25.320465  1 Br py                12     14.517257  1 Br py         
+    18     -8.499902  1 Br py                61     -8.090226  1 Br fxxy       
+    66     -8.088328  1 Br fyyy              68     -8.098492  1 Br fyzz       
+    51     -7.116652  1 Br fxxy              56     -7.120322  1 Br fyyy       
+    58     -7.100670  1 Br fyzz              14     -6.123549  1 Br px         
+
+ Vector   62  Occ=0.000000D+00  E= 2.230960D+00
+              MO Center= -1.6D-12, -4.7D-13, -6.9D-13, r^2= 3.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    14     23.278522  1 Br px                11     13.346527  1 Br px         
+    16      9.963311  1 Br pz                17     -7.814436  1 Br px         
+    60     -7.437784  1 Br fxxx              63     -7.436036  1 Br fxyy       
+    65     -7.441966  1 Br fxzz              15      6.739238  1 Br py         
+    50     -6.542764  1 Br fxxx              53     -6.546144  1 Br fxyy       
+
+ Vector   63  Occ=0.000000D+00  E= 2.233210D+00
+              MO Center= -2.1D-13,  3.6D-15,  4.7D-13, r^2= 3.6D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    16     24.002246  1 Br pz                13     13.763171  1 Br pz         
+    14    -10.324052  1 Br px                19     -8.062803  1 Br pz         
+    62     -7.671527  1 Br fxxz              67     -7.658438  1 Br fyyz       
+    69     -7.682024  1 Br fzzz              52     -6.745573  1 Br fxxz       
+    57     -6.769724  1 Br fyyz              59     -6.726205  1 Br fzzz       
+
+ Vector   64  Occ=0.000000D+00  E= 4.217329D+00
+              MO Center=  1.7D-12, -2.3D-13,  2.3D-13, r^2= 1.2D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     6     -8.536090  1 Br s                  5      8.329097  1 Br s          
+     3     -6.667743  1 Br s                  4     -5.238785  1 Br s          
+    38      3.740386  1 Br dxx               41      3.739600  1 Br dyy        
+    43      3.743848  1 Br dzz                2     -2.354727  1 Br s          
+     7      0.437343  1 Br s                 37     -0.363619  1 Br dzz        
+
+ Vector   65  Occ=0.000000D+00  E= 4.335885D+00
+              MO Center= -7.5D-14,  6.2D-13, -4.1D-14, r^2= 2.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    15     38.195350  1 Br py                12     20.423431  1 Br py         
+    51    -13.803810  1 Br fxxy              56    -13.802795  1 Br fyyy       
+    58    -13.808255  1 Br fyzz              61     -9.444807  1 Br fxxy       
+    66     -9.445485  1 Br fyyy              68     -9.441840  1 Br fyzz       
+    18     -8.816082  1 Br py                14     -5.064673  1 Br px         
+
+ Vector   66  Occ=0.000000D+00  E= 4.335885D+00
+              MO Center= -2.2D-12, -3.5D-13, -9.2D-13, r^2= 2.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    14     35.103051  1 Br px                11     18.769948  1 Br px         
+    16     15.057500  1 Br pz                50    -12.686248  1 Br fxxx       
+    53    -12.685314  1 Br fxyy              55    -12.688488  1 Br fxzz       
+    60     -8.680157  1 Br fxxx              63     -8.680781  1 Br fxyy       
+    65     -8.678662  1 Br fxzz              17     -8.102331  1 Br px         
+
+ Vector   67  Occ=0.000000D+00  E= 4.337594D+00
+              MO Center= -2.8D-13,  5.7D-15,  6.6D-13, r^2= 2.5D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+    16     35.502317  1 Br pz                13     18.986084  1 Br pz         
+    14    -15.270499  1 Br px                52    -12.826807  1 Br fxxz       
+    57    -12.821348  1 Br fyyz              59    -12.831185  1 Br fzzz       
+    62     -8.780735  1 Br fxxz              67     -8.783966  1 Br fyyz       
+    69     -8.778143  1 Br fzzz              11     -8.166424  1 Br px         
+
+ Vector   68  Occ=0.000000D+00  E= 9.190734D+00
+              MO Center=  1.4D-13, -5.6D-15, -3.1D-14, r^2= 3.0D+00
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     4     45.880426  1 Br s                  6     42.192407  1 Br s          
+     3     35.577213  1 Br s                  5    -20.806589  1 Br s          
+    38    -18.554403  1 Br dxx               41    -18.554637  1 Br dyy        
+    43    -18.553369  1 Br dzz               32    -13.240981  1 Br dxx        
+    35    -13.240734  1 Br dyy               37    -13.242067  1 Br dzz        
+
+ Vector   69  Occ=0.000000D+00  E= 7.761391D+01
+              MO Center=  2.5D-16, -6.6D-17, -3.5D-17, r^2= 4.7D-02
+   Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
+  ----- ------------  ---------------      ----- ------------  ---------------
+     3     26.511797  1 Br s                 26    -15.970299  1 Br dxx        
+    29    -15.970296  1 Br dyy               31    -15.970311  1 Br dzz        
+     2     15.291346  1 Br s                  5     13.057714  1 Br s          
+     4      5.178822  1 Br s                 32     -4.092923  1 Br dxx        
+    35     -4.092931  1 Br dyy               37     -4.092886  1 Br dzz        
+
+
+   alpha - beta orbital overlaps 
+   ----------------------------- 
+
+
+   alpha      1      2      3      4      5      6      7      8      9     10
+    beta      1      2      3      4      5      6      7      8      9     10
+ overlap   1.000  1.000  1.000  1.000  1.000  1.000  1.000  0.996  0.996  1.000
+
+
+   alpha     11     12     13     14     15     16     17     18     19     20
+    beta     11     12     13     14     15     18     17     16     19     22
+ overlap   0.754  0.754  0.992  0.992  0.999  0.999  0.999  0.999  0.998  0.999
+
+
+   alpha     21     22     23     24     25     26     27     28     29     30
+    beta     21     20     27     25     26     23     24     28     31     30
+ overlap   0.992  0.992  0.993  0.978  0.978  0.946  0.946  0.996  0.999  0.993
+
+
+   alpha     31     32     33     34     35     36     37     38     39     40
+    beta     29     36     34     35     32     33     43     42     41     40
+ overlap   0.993  0.997  0.981  0.981  0.863  0.863  0.998  0.999  0.999  0.819
+
+
+   alpha     41     42     43     44     45     46     47     48     49     50
+    beta     39     37     38     44     47     46     45     48     53     49
+ overlap   0.819  0.929  0.929  0.999  0.998  0.994  0.994  1.000  0.999  0.982
+
+
+   alpha     51     52     53     54     55     56     57     58     59     60
+    beta     50     52     51     60     59     58     57     56     55     54
+ overlap   0.982  0.777  0.777  0.999  0.943  0.943  1.000  1.000  0.735  0.735
+
+
+   alpha     61     62     63     64     65     66     67     68     69
+    beta     63     62     61     64     67     66     65     68     69
+ overlap   1.000  0.990  0.990  1.000  1.000  0.987  0.987  1.000  1.000
+
+     --------------------------
+     Expectation value of S2:  
+     --------------------------
+      <S2> =      0.7526 (Exact =     0.7500)
+
+
+ Task  times  cpu:       10.7s     wall:       11.0s
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+ Summary of allocated global arrays
+-----------------------------------
+  No active global arrays
+
+
+MA_summarize_allocated_blocks: starting scan ...
+heap block 'gridpts', handle 100, address 0x109ba440:
+	type of elements:		double precision
+	number of elements:		33554432
+	address of client space:	0x109ba4c0
+	index for client space:		10223601
+	total number of bytes:		268435592
+MA_summarize_allocated_blocks: scan completed: 1 heap block, 0 stack blocks
+MA usage statistics:
+
+	allocation statistics:
+					      heap	     stack
+					      ----	     -----
+	current number of blocks	         1	         0
+	maximum number of blocks	        21	        53
+	current total bytes		 268435592	         0
+	maximum total bytes		 268761080	  37044392
+	maximum total K-bytes		    268762	     37045
+	maximum total M-bytes		       269	        38
+
+
+                                     CITATION
+                                     --------
+                Please cite the following reference when publishing
+                           results obtained with NWChem:
+
+          E. Apra, E. J. Bylaska, W. A. de Jong, N. Govind, K. Kowalski,
+       T. P. Straatsma, M. Valiev, H. J. J. van Dam, Y. Alexeev, J. Anchell,
+       V. Anisimov, F. W. Aquino, R. Atta-Fynn, J. Autschbach, N. P. Bauman,
+     J. C. Becca, D. E. Bernholdt, K. Bhaskaran-Nair, S. Bogatko, P. Borowski,
+         J. Boschen, J. Brabec, A. Bruner, E. Cauet, Y. Chen, G. N. Chuev,
+      C. J. Cramer, J. Daily, M. J. O. Deegan, T. H. Dunning Jr., M. Dupuis,
+   K. G. Dyall, G. I. Fann, S. A. Fischer, A. Fonari, H. Fruchtl, L. Gagliardi,
+      J. Garza, N. Gawande, S. Ghosh, K. Glaesemann, A. W. Gotz, J. Hammond,
+       V. Helms, E. D. Hermes, K. Hirao, S. Hirata, M. Jacquelin, L. Jensen,
+   B. G. Johnson, H. Jonsson, R. A. Kendall, M. Klemm, R. Kobayashi, V. Konkov,
+      S. Krishnamoorthy, M. Krishnan, Z. Lin, R. D. Lins, R. J. Littlefield,
+      A. J. Logsdail, K. Lopata, W. Ma, A. V. Marenich, J. Martin del Campo,
+   D. Mejia-Rodriguez, J. E. Moore, J. M. Mullin, T. Nakajima, D. R. Nascimento,
+    J. A. Nichols, P. J. Nichols, J. Nieplocha, A. Otero-de-la-Roza, B. Palmer,
+    A. Panyala, T. Pirojsirikul, B. Peng, R. Peverati, J. Pittner, L. Pollack,
+   R. M. Richard, P. Sadayappan, G. C. Schatz, W. A. Shelton, D. W. Silverstein,
+   D. M. A. Smith, T. A. Soares, D. Song, M. Swart, H. L. Taylor, G. S. Thomas,
+            V. Tipparaju, D. G. Truhlar, K. Tsemekhman, T. Van Voorhis,
+      A. Vazquez-Mayagoitia, P. Verma, O. Villa, A. Vishnu, K. D. Vogiatzis,
+        D. Wang, J. H. Weare, M. J. Williamson, T. L. Windus, K. Wolinski,
+        A. T. Wong, Q. Wu, C. Yang, Q. Yu, M. Zacharias, Z. Zhang, Y. Zhao,
+                                and R. J. Harrison
+                        "NWChem: Past, present, and future
+                         J. Chem. Phys. 152, 184102 (2020)
+                               doi:10.1063/5.0004997
+
+                                      AUTHORS
+                                      -------
+  E. Apra, E. J. Bylaska, N. Govind, K. Kowalski, M. Valiev, D. Mejia-Rodriguez,
+       A. Kunitsa, N. P. Bauman, A. Panyala, W. A. de Jong, T. P. Straatsma,
+   H. J. J. van Dam, D. Wang, T. L. Windus, J. Hammond, J. Autschbach, A. Woods,
+    K. Bhaskaran-Nair, J. Brabec, K. Lopata, S. A. Fischer, S. Krishnamoorthy,
+     M. Jacquelin, W. Ma, M. Klemm, O. Villa, Y. Chen, V. Anisimov, F. Aquino,
+     S. Hirata, M. T. Hackler, E. Hermes, L. Jensen, J. E. Moore, J. C. Becca,
+      V. Konjkov, T. Risthaus, M. Malagoli, A. Marenich, A. Otero-de-la-Roza,
+        J. Mullin, P. Nichols, R. Peverati, J. Pittner, Y. Zhao, P.-D. Fan,
+        A. Fonari, M. J. Williamson, R. J. Harrison, J. R. Rehr, M. Dupuis,
+     D. Silverstein, D. M. A. Smith, J. Nieplocha, V. Tipparaju, M. Krishnan,
+     B. E. Van Kuiken, A. Vazquez-Mayagoitia, M. Swart, Q. Wu, T. Van Voorhis,
+     A. A. Auer, M. Nooijen, L. D. Crosby, E. Brown, G. Cisneros, G. I. Fann,
+   H. Fruchtl, J. Garza, K. Hirao, R. A. Kendall, J. A. Nichols, K. Tsemekhman,
+    K. Wolinski, J. Anchell, D. E. Bernholdt, P. Borowski, T. Clark, D. Clerc,
+   H. Dachsel, M. J. O. Deegan, K. Dyall, D. Elwood, E. Glendening, M. Gutowski,
+   A. C. Hess, J. Jaffe, B. G. Johnson, J. Ju, R. Kobayashi, R. Kutteh, Z. Lin,
+   R. Littlefield, X. Long, B. Meng, T. Nakajima, S. Niu, L. Pollack, M. Rosing,
+   K. Glaesemann, G. Sandrone, M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe,
+                               A. T. Wong, Z. Zhang.
+
+ Total times  cpu:       10.8s     wall:       11.1s

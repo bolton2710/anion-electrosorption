@@ -1,0 +1,33 @@
+start dft
+
+permanent_dir ./
+
+scratch_dir /jet/home/hmt47/nwchem_scratch/
+
+memory total 2 gb
+
+basis
+  * library aug-cc-pVTZ 
+end
+
+charge -1
+dft
+  iterations 200
+  convergence fast
+  print "final vectors analysis"
+  xc xpbe96 cpbe96        
+  mult 1
+end
+
+set lindep:n_dep 0
+
+geometry units angstrom nocenter noautosym noautoz
+  S  0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00
+  O  1.0769999999999946e-02 1.4386570000000001e+00 -3.7318899999999999e-01
+  O  1.2450060000000001e+00 -7.0785700000000018e-01 -4.1338700000000017e-01
+  O  -6.9290999999999769e-02 -8.3858999999999906e-02 1.5690059999999999e+00
+  O  -1.2424349999999995e+00 -7.0463800000000010e-01 -3.9862699999999940e-01
+  H  7.5446900000000028e-01 2.7853400000000006e-01 2.0014690000000002e+00
+end
+task dft optimize
+
