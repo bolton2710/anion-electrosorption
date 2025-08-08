@@ -16,11 +16,16 @@ The repository is organized into `GCDFT-data` and `MLR-data`.
 
 `GCDFT-data` contains:
 - `optimization`: optimized geometries and DFT calculation input for all surfaces and molecules.
-- `vibration`: modified ASE-JDFTx interface for perform vibration calculations.
+- `vibration`: modified [*ASE-JDFTx*](https://jdftx.org/ASE.html) interface for perform vibration calculations.
 
 `MLR-data` contains:
-- `NWChem-descriptors`: input and output of DFT calculations performed in NWChem for extracting anion features.
-- `VASP-descriptors`: input and output of DFT calculations performed in VASP for extracting dipole feature.
+- `NWChem-descriptors`: input and output of DFT calculations performed in [*NWChem*](https://nwchemgit.github.io/index.html) for extracting anion features.
+- `VASP-descriptors`: input and output of DFT calculations performed in [*VASP*](https://www.vasp.at/) for extracting dipole feature.
+
+`python-analysis` contains:
+- `GCDFT_compile`: Excel file with comprehensive compilation of GC-DFT output for all adsorbate systems in this study.
+- `GCDFT_MLR`: Jupyter Notebook that reads the Excel file and run multiple linear regression analyses using [*pandas*](https://pandas.pydata.org/) and [*scikit-learn*](https://scikit-learn.org/stable/).
+- `GCDFT_Langmuir`: Jupyter Notebook that runs non-linear solvers based on [*scipy.optimize.fsolve*](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fsolve.html) to obtain potential-dependent Langmuir isotherms.
 
 ## License  
 - **Code/Software**: Licensed under [MIT](./LICENSE-CODE).
