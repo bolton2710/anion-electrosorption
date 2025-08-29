@@ -5,10 +5,15 @@
 [![CC BY 4.0](https://img.shields.io/badge/License_data-CC_BY_4.0-blue.svg)](./LICENSE-DATA)
 
 This repository contains input and output files for grand-canonical density function theory (**GC-DFT**)
-calculations, and multiple linear regression (**MLR**) descriptors as presented in our paper: 
+calculations, and multiple linear regression (**MLR**) descriptors as presented in our paper:
+
 *Predicting Competitive Anion Electrosorption on Late Transition Metals*
 
-Current manuscript status: *Pending peer-reviewed*
+*Bolton Tran and Bryan R. Goldsmith*
+
+*Chemical Science* [https://doi.org/10.1039/D5SC03757C](https://doi.org/10.1039/D5SC03757C)
+
+![Graphical Abstract](TOC.png)
 
 ## Repository structure
 
